@@ -6,6 +6,9 @@ import InviteTeam from "./Components/Signup/InviteTeam"
 import Main from './Components/Dashboard/Main';
 import Documents from './Components/Pages/Documents';
 import Activity from "./Components/Pages/Activity"
+import ProjectsSettings from "./Components/Pages/ProjectSettings"
+import EditDocument from './Components/Pages/EditDocument';
+import NFTmarketplace from './Components/Pages/NFTmarketplace';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path='/main' element={<Main />} />
           <Route path='/documents' element={<Documents />} />
           <Route path='/activity' element={<Activity />} />
+          <Route path='/editdocument' element={<EditDocument/>} />
+          <Route path='/projectsettings' element={<ProjectsSettings />} />
+          <Route path='/nftmarketplace' element={<NFTmarketplace />} />
         </Routes>
       </Router>
     </>

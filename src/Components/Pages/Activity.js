@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -9,11 +9,35 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import { mainListItems, secondaryListItems } from "../Dashboard/SideNav";
 import Header from "../Dashboard/Header";
+import Button from '@mui/material/Button';
+import EditIcon from '@mui/icons-material/Edit';
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import Typography from '@mui/material/Typography';
+import Modal from "react-bootstrap/Modal";
+import TextEditor from "../RteEditor/TextEditor";
+
 
 
 const drawerWidth = 240;
+
+const Accordion = ({ children }) => {
+    let rfVal = useRef(null);
+
+    useEffect(() => {
+        handleClick();
+    }, []);
+
+    const handleClick = () => {
+        const acc = rfVal.children;
+        for (let i = 0; i < acc.length; i++) {
+            let a = acc[i];
+            a.children[0].onclick = () => a.classList.toggle("active");
+        }
+    };
+
+    return <div ref={a => (rfVal = a)}>{children}</div>;
+};
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -100,7 +124,11 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Documents() {
+export default function Activity() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -116,12 +144,12 @@ export default function Documents() {
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
                 <Toolbar className={classes.toolbar}>
-                    <img style={{ position: "absolute", top: "25px" }} src={require("../../assets/image/png/sidenav.png").default} alt="" className={clsx(
+                    <img  src={require("../../assets/image/png/sidenav.png").default} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
                     )} onClick={handleDrawerOpen} />
                     <Header />
-                </Toolbar>
+                </Toolbar>   
             </AppBar>
             <Drawer
                 variant="permanent"
@@ -140,7 +168,7 @@ export default function Documents() {
                 <List>{mainListItems}</List>
                 <Divider />
                 <List>{secondaryListItems}</List>
-            </Drawer>
+            </Drawer> 
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
                 <div className="activity_header">
@@ -173,7 +201,128 @@ export default function Documents() {
                         </div>
                     </div>
                 </div>
+
+                <div className="activity_button mt_10 mb_10">
+                    <div>
+                        <button className="button1">10 June 2022</button>
+                    </div>
+                    <div>
+                        <button className="button2">28hrs  40mins</button>
+                    </div>
+                </div>
+
+                <div>
+                    <Accordion>
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+                    </Accordion>
+                </div>
+
+
+                <div className="activity_button mt_10 mb_10">
+                    <div>
+                        <button className="button1">9 June 2022</button>
+                    </div>
+                    <div>
+                        <button className="button2">13hrs  10mins</button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <Accordion>
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/aprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik Patel</span><span className="designation pl_5 pr_5">Wireframe designer</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+
+
+                        <div className="accor">
+                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik Jolapara</span><span className="designation pl_5 pr_5">Project Manager</span></Typography>
+                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                                    Edit
+                                </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
+                            <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
+                                - Update APIs in artist details to solve bug == DONE <br />
+                                - Changes in home mix module in admin panel == DONE <br />
+                                - Add comments in controllers for better understand == IN PROGRESS <br /></div>
+                        </div>
+                    </Accordion>
+                </div>
+
             </main>
+            <Modal show={show} onHide={handleClose} size="lg">
+                <Modal.Header closeButton>
+                    <Modal.Title className="modal_title">Edit Report</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="edit_box_header">
+                        <div className="edit_report_header mb_10"><Typography><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                            <Typography><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">Last edited on 14 may by <b>Rushabh patel</b> 2022 at 6:15 Pm</span></Typography></div>
+                    </div>
+                    <TextEditor />
+                </Modal.Body>
+                <Modal.Footer className="modal_footer">
+                    <div className="d-flex justify-content-center align-items-center">
+                         <span className="hours_worked">Hours Worked</span>
+                        <div className="time_zone d-flex justify-content-center align-items-center ml_10">
+                           <span>7</span>  <span style={{color :"#8B8B8B", paddingLeft:"10px", borderRight: "1px solid #E2E2E2",paddingRight:"15px"}}>Hrs</span>
+                           <span style={{paddingLeft:"15px"}}>40</span>  <span style={{color :"#8B8B8B",paddingLeft:"10px"}}>Mins</span>
+                        </div>
+                    </div>   
+                    <button className="editor_save_button" onClick={handleClose}>
+                        Save
+                    </button>
+                </Modal.Footer>
+            </Modal>
         </div>
+
     );
 }

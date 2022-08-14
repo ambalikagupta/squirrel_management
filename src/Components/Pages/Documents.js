@@ -116,7 +116,7 @@ export default function Documents() {
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
                 <Toolbar className={classes.toolbar}>
-                    <img style={{ position: "absolute", top: "25px" }} src={require("../../assets/image/png/sidenav.png").default} alt="" className={clsx(
+                    <img src={require("../../assets/image/png/sidenav.png").default} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
                     )} onClick={handleDrawerOpen} />
@@ -181,7 +181,37 @@ export default function Documents() {
                     <div class="col-md-3 mb_10">
                         <div class="card">
                             <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
+                                <img src={require("../../assets/image/png/documents2.png").default} alt="" />
+                                <div className="documents_text">
+                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb_10">
+                        <div class="card">
+                            <div class="card-block">
+                                <img src={require("../../assets/image/png/documents3.png").default} alt="" />
+                                <div className="documents_text">
+                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb_10">
+                        <div class="card">
+                            <div class="card-block">
+                                <img src={require("../../assets/image/png/documents4.png").default} alt="" />
+                                <div className="documents_text">
+                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb_10">
+                        <div class="card">
+                            <div class="card-block">
+                                <img src={require("../../assets/image/png/documents5.png").default} alt="" />
                                 <div className="documents_text">
                                     <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
@@ -201,7 +231,7 @@ export default function Documents() {
                     <div class="col-md-3 mb_10">
                         <div class="card">
                             <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
+                                <img src={require("../../assets/image/png/documents2.png").default} alt="" />
                                 <div className="documents_text">
                                     <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
@@ -211,7 +241,7 @@ export default function Documents() {
                     <div class="col-md-3 mb_10">
                         <div class="card">
                             <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
+                                <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
                                     <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
@@ -221,7 +251,7 @@ export default function Documents() {
                     <div class="col-md-3 mb_10">
                         <div class="card">
                             <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
+                                <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
                                     <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
@@ -231,17 +261,7 @@ export default function Documents() {
                     <div class="col-md-3 mb_10">
                         <div class="card">
                             <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
-                                <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb_10">
-                        <div class="card">
-                            <div class="card-block">
-                                <img src={require("../../assets/image/png/documents1.png").default} alt="" />
+                                <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
                                     <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>

@@ -114,7 +114,7 @@ export default function Dashboard() {
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
                 <Toolbar className={classes.toolbar}>
-                        <img style={{position: "absolute", top:"25px"}} src={require("../../assets/image/png/sidenav.png").default} alt=""  className={clsx(
+                        <img  src={require("../../assets/image/png/sidenav.png").default} alt=""  className={clsx(
                             classes.menuButton,
                             open && classes.menuButtonHidden
                         )}  onClick={handleDrawerOpen} />
