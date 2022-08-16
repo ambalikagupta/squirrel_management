@@ -157,7 +157,7 @@ export default function Documents() {
                         <div className="search_document">
                             <form class="d-flex justify-content-between align-items-center mr_15">
                                 <input
-                                    class="form-control border-0 ml_5 pl_35"
+                                    class="form-control ml_5 pl_35"
                                     type="search"
                                     placeholder="Search Document"
                                     aria-label="Search"

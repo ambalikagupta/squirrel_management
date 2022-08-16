@@ -1,14 +1,18 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './Components/Login/Login';
-import SignUp from "./Components/Signup/Signup"
-import CompanyDetails from "./Components/Signup/CompanyDeatils"
-import InviteTeam from "./Components/Signup/InviteTeam"
+import SignUp from "./Components/Signup/Signup";
+import CompanyDetails from "./Components/Signup/CompanyDeatils";
+import InviteTeam from "./Components/Signup/InviteTeam";
 import Main from './Components/Dashboard/Main';
 import Documents from './Components/Pages/Documents';
-import Activity from "./Components/Pages/Activity"
-import ProjectsSettings from "./Components/Pages/ProjectSettings"
+import Activity from "./Components/Pages/Activity";
+import ProjectsSettings from "./Components/Pages/ProjectSettings";
 import EditDocument from './Components/Pages/EditDocument';
 import NFTmarketplace from './Components/Pages/NFTmarketplace';
+import Datatable from './Components/Pages/Datatable';
+import { Settings } from '@material-ui/icons';
+import Setting from './Components/Pages/Setting'
+
 
 function App() {
   return (
@@ -24,7 +28,9 @@ function App() {
           <Route path='/activity' element={<Activity />} />
           <Route path='/editdocument' element={<EditDocument/>} />
           <Route path='/projectsettings' element={<ProjectsSettings />} />
-          <Route path='/nftmarketplace' element={<NFTmarketplace />} />
+          <Route path='/nftmarketplace' element={<NFTmarketplace/>} />
+          <Route path='/datatable' element={<Datatable />} />
+          <Route path='/setting' element={<Setting/>} />
         </Routes>
       </Router>
     </>

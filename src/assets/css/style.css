@@ -1600,7 +1600,7 @@
 }
 
 .login_account_div p {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1611,10 +1611,10 @@
 }
 
 .login_account_div .craete-link {
-  border: 1px solid #8b8b8b;
+  border: 1px solid #8B8B8B;
   border-radius: 100px;
   padding: 12px 19px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1623,7 +1623,7 @@
 }
 
 .divider h2 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1633,12 +1633,13 @@
 }
 
 .divider p {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
+
 }
 
 .loginpage_field {
@@ -1650,45 +1651,45 @@
 
 .logininput_field {
   background: none !important;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #D6D6D6;
   border-radius: 3px;
 }
 
 .logininput_field::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
 }
 
 .forgot_password_link a {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #d32121;
+  color: #D32121;
   text-decoration: none;
 }
 
 .forgot_password_link button {
-  background: #3653f6;
+  background: #3653F6;
   border-radius: 3px;
   padding: 12px 40px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   border: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .socialmedia_div .lead {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -1702,18 +1703,21 @@
 }
 
 .socialmedia_button button {
-  border: 1px solid #d6d6d6;
+  border: 1px solid #D6D6D6;
   border-radius: 3px;
   background: none !important;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #242529;
+
 }
 
+
 /* -------------------------------------------------------/* Login css end *------------------------------------- */
+
 
 /* -------------------------------------------------------/* sign up css start *------------------------------------- */
 .row.signuppage {
@@ -1721,13 +1725,13 @@
 }
 
 .signup_header_logo {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #FFFFFF;
   text-transform: uppercase;
   padding: 35px 20px;
 }
@@ -1737,28 +1741,28 @@
 }
 
 .signup_sidenav .new_account {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .signup_details h6 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #FFFFFF;
   /* border-left: 1px solid #FFFFFF ; */
 }
 
 .signup_details p {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1781,7 +1785,7 @@
 }
 
 .signup_divider h2 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 27px;
@@ -1791,97 +1795,100 @@
 }
 
 .signup_divider p {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
 }
 
 .signupinput_field {
   background: none !important;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #D6D6D6;
   border-radius: 3px;
 }
 
 .signupinput_field::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
 }
 
 .signup_button button {
-  background: #3653f6;
+  background: #3653F6;
   border-radius: 3px;
   padding: 12px 70px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   border: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .signup_details .company_information {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .signupinput_field option {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px !important;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
 }
 
 .signup_details .team {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .addmore_team_link a {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #0c1ebe;
+  color: #0C1EBE;
+
 }
 
 /* -------------------------------------------------------/* sign up css end *------------------------------------- */
 
+
 /* -------------------------------------------------------/* sidenav header css start *------------------------------------- */
+
 
 .sidebar {
   height: 100vh;
   transition: 0.5s;
   z-index: 99;
   position: relative;
-  border-right: 1px solid #e1e3e9;
+  border-right: 1px solid #E1E3E9;
   padding-right: 5px;
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
 .logo a {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -1898,6 +1905,7 @@
   justify-content: space-between;
 }
 
+
 /*******************/
 .makeStyles-drawerPaperClose-10 span,
 .makeStyles-drawerPaperClose-10 ul .sidenav .create_project {
@@ -1909,7 +1917,7 @@
   text-decoration: none;
   letter-spacing: 0.5px;
   color: #818181;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -1937,9 +1945,10 @@
   font-size: 15px;
   line-height: 20px;
   text-align: left;
-  color: #3653f6;
+  color: #3653F6;
   padding-left: 5px;
 }
+
 
 .sidenav_bottom_div a {
   display: flex;
@@ -1948,31 +1957,31 @@
 }
 
 .sidenav_bottom_div .letter_circle1 {
-  background: #e3afff;
+  background: #E3AFFF;
   border-radius: 50%;
   padding: 6px 6px;
 }
 
 .sidenav_bottom_div .letter_circle2 {
-  background: #fff1a6;
+  background: #FFF1A6;
   border-radius: 50%;
   padding: 6px 6px;
 }
 
 .sidenav_bottom_div .letter_circle3 {
-  background: #ffa8d0;
+  background: #FFA8D0;
   border-radius: 50%;
   padding: 6px 6px;
 }
 
 .sidenav_bottom_div .letter_circle4 {
-  background: #95b7e7;
+  background: #95B7E7;
   border-radius: 50%;
   padding: 6px 6px;
 }
 
 .sidenav_bottom_div .letter_circle5 {
-  background: #ff8584;
+  background: #FF8584;
   border-radius: 50%;
   padding: 6px 8px;
 }
@@ -1990,14 +1999,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 16 px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: #242529;
-  border-top: 1px solid #e1e3e9;
+  border-top: 1px solid #E1E3E9;
   position: absolute;
   left: 0;
   right: 10px;
@@ -2010,6 +2019,7 @@
 
 /* header css  */
 
+
 .main-header {
   position: unset !important;
 }
@@ -2020,7 +2030,7 @@
   top: 15px;
 }
 
-@media (max-width: 991px) {
+@media (max-width:991px) {
   .navbar {
     padding: 20px 0px !important;
   }
@@ -2032,7 +2042,7 @@
 }
 
 .navbar_navigation a {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-size: 16px;
   line-height: 16px;
@@ -2048,7 +2058,7 @@
 
 .navbar_navigation a:nth-child(2) {
   font-weight: 600;
-  color: #3653f6 !important;
+  color: #3653F6 !important;
 }
 
 /* -------------------------------------------------------/* sidenav header css end *------------------------------------- */
@@ -2074,7 +2084,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #e1e3e9;
+  border-top: 1px solid #E1E3E9;
   padding: 10px 10px;
 }
 
@@ -2083,7 +2093,7 @@
 }
 
 .documents_text .scope_work {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px !important;
@@ -2092,7 +2102,7 @@
 }
 
 .documents_text .pt_5 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -2109,7 +2119,7 @@
 }
 
 .documents_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -2126,18 +2136,18 @@
 }
 
 .search_document input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #8b8b8b;
+  color: #8B8B8B;
 }
 
 .custom-select-documents select {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2149,8 +2159,10 @@
   border: none;
 }
 
+
 /* -------------------------------------------------------/* Documents css end *------------------------------------- */
 /* -------------------------------------------------------/* Activity css start *------------------------------------- */
+
 
 .activity_header {
   display: flex;
@@ -2160,7 +2172,7 @@
 }
 
 .activity_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -2177,18 +2189,18 @@
 }
 
 .search_document input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #8b8b8b;
+  color: #8B8B8B;
 }
 
 .custom-select-activity select {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2208,23 +2220,23 @@
 }
 
 .activity_button .button1 {
-  background: #3653f6;
+  background: #3653F6;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 8px 20px;
   border: none;
 }
 
 .activity_button .button2 {
-  background: #f1f1f1;
+  background: #F1F1F1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -2249,7 +2261,7 @@
 
 .accor .time,
 .edit_box_header .time {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -2259,17 +2271,17 @@
 
 .accor .profilename,
 .edit_box_header .profilename {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
-  color: #242529;
+  color: #242529
 }
 
 .accor .designation,
 .edit_box_header .designation {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -2278,12 +2290,12 @@
 }
 
 .accor .edit_button {
-  background: #f1f1f1;
+  background: #F1F1F1;
   border-radius: 5px;
   padding: 6px 15px;
   text-transform: capitalize;
   color: #151417;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2296,7 +2308,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 150ms ease-in-out;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2305,7 +2317,7 @@
   padding: 0px 90px;
 }
 
-.accor.active > .body {
+.accor.active>.body {
   max-height: 600px;
   padding-bottom: 15px;
 }
@@ -2319,13 +2331,13 @@
 }
 
 .modal_title {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700 !important;
   font-size: 16px !important;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #000000
 }
 
 .modal_footer {
@@ -2335,21 +2347,21 @@
 }
 
 .modal_footer .hours_worked {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #8b8b8b;
+  color: #8B8B8B;
 }
 
 .modal_footer .time_zone {
-  background: #f6f6f6;
-  border: 1px solid #e2e2e2;
+  background: #F6F6F6;
+  border: 1px solid #E2E2E2;
   border-radius: 6px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -2359,19 +2371,21 @@
 }
 
 .editor_save_button {
-  background: #3653f6;
+  background: #3653F6;
   border-radius: 2px;
   padding: 8px 50px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  color: #FFFFFF;
   border: none;
 }
 
+
 /* -------------------------------------------------------/* Activity css end *------------------------------------- */
+
 
 /* -------------------------------------------------------/* Edit Document css Start *------------------------------------- */
 
@@ -2380,6 +2394,7 @@
   margin-left: 0px;
   margin-right: 20px;
 }
+
 .document_header {
   display: flex;
   justify-content: space-between;
@@ -2388,7 +2403,7 @@
 }
 
 .document_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -2397,12 +2412,12 @@
 }
 
 .document_header .text-muted {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
-  color: #7f8197;
+  color: #7F8197
 }
 
 .document_button {
@@ -2413,23 +2428,23 @@
 }
 
 .document_button .button2 {
-  background: #3653f6;
+  background: #3653F6;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 10px 35px;
   border: none;
 }
 
 .document_button .button1 {
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #242529;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -2438,7 +2453,129 @@
   padding: 8px 20px;
 }
 
+.modal_body_toggle,
+.modal_body_bottom_toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_body_toggle .link_text {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #242529;
+  margin-bottom: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 27px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #08BD7C;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #08BD7C;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.modal_body_toggle .download_pdf {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #3653F6;
+  text-decoration: none;
+}
+
+.modal_body_toggle .text-muted,
+.modal_body_bottom_toggle .text-muted {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  color: #737376;
+}
+
+.copy_link_buttton button {
+  background: #19B858;
+  border-radius: 6px;
+  width: 100%;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 13px 0px;
+}
+
+.profilename_client {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3653F6;
+}
+
 /* -------------------------------------------------------/* Edit Document css end *------------------------------------- */
+
 /* -------------------------------------------------------/* Project Settings css Start *------------------------------------- */
 .form_group {
   margin-left: 5px;
@@ -2446,14 +2583,14 @@
 }
 
 .form_group input {
-  border: 1px solid #d6d6d6;
+  border: 1px solid #D6D6D6;
   border-radius: 3px;
   padding: 10px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #151417;
+  color: #151417
 }
 
 .form_group label {
@@ -2489,15 +2626,15 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 20px;	
 }
 
 .form_group .btnsave button {
   border: none;
-  background: #f6f6f6;
+  background: #F6F6F6;
   border-radius: 4px;
   padding: 10px 50px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2506,12 +2643,160 @@
 }
 
 .form_group input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #7f8197;
+  color: #7F8197;
 }
 
+
+
+
 /* -------------------------------------------------------/* Project Settings css end *------------------------------------- */
+/* -------------------------------------------------------/*  Datatable css start *------------------------------------- */
+.member_search
+{
+  background: #ffffff;
+border-radius: 8px;
+border: 1px solid #E2E2E2;
+}
+.rightside_div .btn_invite{
+  width: 101px;
+height: 38px;
+border: none;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #FFFFFF;
+background: #3653F6;
+border-radius: 0px 4px 4px 0px;
+
+}
+.rightside_div .select_member{
+  width: 101px;
+height: 38px;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #242529;
+border: 1px solid #E2E2E2;
+}
+.rightside_div .invite_member{
+  width: 225px;
+height: 38px;
+font-size: 13px;
+line-height: 16px;
+font-weight: 500;
+border: 1px solid #E2E2E2;
+}
+.document_header h2{
+  font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 21px;
+color: #242529;
+}
+.header_select_selection{
+  font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+align-items: center;
+color: #242529;
+
+}
+.full_member_div p:first-child{
+  font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: #151417;
+gap: 10px;
+}
+/* gray text */
+.full_member_div p{
+color: #8B8B8B;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+}
+
+
+
+/* -------------------------------------------------------/* Datatable css end *------------------------------------- */
+/* -------------------------------------------------------/* Settings css start *------------------------------------- */
+
+.wolfsoft_div{
+  width: 85px;
+  height: 85px;
+background: #FFFFFF;
+border: 1px solid #E8ECF4;
+border-radius: 3px;
+
+}
+.wolfsoft_div img{
+  width: 58px;
+  height: 58px;
+ 
+}
+.setting_right_section p:first-child  {
+  width: 181px;
+height: 22px;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #151417;
+}
+.setting_right_section p{
+  font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #242529;
+}
+.setting_right_section span{
+  font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: #737376;
+}
+
+.overview_section .overview{
+  
+width: 72px;
+height: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.setting_header h2{
+  font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 21px;
+color: #242529;
+
+}
+.company_details p{
+  font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #000000;
+}
+.company_details .link{
+  font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #3653F6;
+}
+/* -------------------------------------------------------/* Settings css end *------------------------------------- */
+/* -------------------------------------------------------/* Settings css end *------------------------------------- */
+/* -------------------------------------------------------/* Settings css end *------------------------------------- */
+
