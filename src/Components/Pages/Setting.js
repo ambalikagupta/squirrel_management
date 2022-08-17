@@ -157,7 +157,7 @@ export default function Projectsetting() {
           <hr style={{ background: "#E1E3E9" }} className="mt_25 mb_25" />
         </div>
         <div className="d-flex">
-          <div className="wolfsoft_div pl_10 pt_10 ">
+          <div className="wolfsoft_div pl_10 pt_10 pr_10 pb_10 ">
             <img
               src={require("../../assets/image/png/wolfsoft.png").default}
               alt=""
@@ -171,39 +171,47 @@ export default function Projectsetting() {
             </p>
             <span>IT Services and IT Consulting . Vadodara, Gujarat</span>
           </div>
-          </div>
-          <hr />
-          <div className="overview_section">
+        </div>
+        <hr />
+        <div className="overview_section">
           <p className="overview">Overview</p>
-          <img
-          src={require("../../assets/image/png/years_experience.png").default}
-          alt="" />
-          </div>
-          <div className="company_details mt_20">
+          <p>
+            ✅ +7 years experience in digital product development <br/>✅ Best
+            practices <br /> ✅ Swift response and communications. <br /> <br /> 💎 Result-oriented
+            and highly motivated Interface Designer with over 7 years experience
+            with huge brands and companies from over than 20+ countries of the
+            world. I know my business and always take a lead in work. Each
+            solution that I suggest you is based on facts, data and real
+            experience. I will always have interesting solutions for your
+            project, using the latest design trends.
+          </p>
+        </div>
+        <div className="company_details mt_20">
           <p className="mb_5">Website</p>
           <span className="link">https://wolfsoft.in</span>
-          </div>
-          <div className="company_details mt_25">
+        </div>
+        <div className="company_details mt_25">
           <p className="mb_5">Phone</p>
-          <span>+91 9549990169,  +91 774388438883</span>
-          </div>
-          <div className="company_details mt_25">
+          <span>+91 9549990169, +91 774388438883</span>
+        </div>
+        <div className="company_details mt_25">
           <p className="mb_5">Email Id</p>
           <span>ceo@wolfsoft.in</span>
-          </div>
-          <div className="company_details mt_25">
+        </div>
+        <div className="company_details mt_25">
           <p className="mb_5">Industry</p>
           <span>IT Services and IT Consulting</span>
-          </div>
-          <div className="company_details mt_25">
+        </div>
+        <div className="company_details mt_25">
           <p className="mb_5">Founded</p>
           <span>2015</span>
-          </div>
-          <div className="company_details mt_25">
+        </div>
+        <div className="company_details mt_25">
           <p className="mb_5">Founder & Director</p>
-          <p>Rushabh Patel  <span>( View Profile )</span></p>
-          </div>
-
+          <p>
+            Rushabh Patel <span>( View Profile )</span>
+          </p>
+        </div>
       </main>
     </div>
   );

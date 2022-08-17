@@ -10,8 +10,8 @@ import ProjectsSettings from "./Components/Pages/ProjectSettings";
 import EditDocument from './Components/Pages/EditDocument';
 import NFTmarketplace from './Components/Pages/NFTmarketplace';
 import Datatable from './Components/Pages/Datatable';
-import { Settings } from '@material-ui/icons';
-import Setting from './Components/Pages/Setting'
+import Setting from './Components/Pages/Setting';
+import Candidates from './Components/Pages/Candidates';
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
           <Route path='/nftmarketplace' element={<NFTmarketplace/>} />
           <Route path='/datatable' element={<Datatable />} />
           <Route path='/setting' element={<Setting/>} />
+          <Route path='/candidates' element={<Candidates/>} />
         </Routes>
       </Router>
     </>
