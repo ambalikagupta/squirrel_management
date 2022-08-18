@@ -2012,6 +2012,21 @@
 
 .main-header {
   position: unset !important;
+  width: 100%;
+}
+
+.main-header .button1 {
+  background: #000000;
+  border: 1px solid #242529;
+  border-radius: 100px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #f6f6f6;
+  padding: 8px 20px;
+  border: none;
 }
 
 .navbar-toggler {
@@ -2781,12 +2796,85 @@ input:checked + .slider:before {
 }
 /* -------------------------------------------------------/* Settings css end *------------------------------------- */
 /* -------------------------------------------------------/* Candidates css start *------------------------------------- */
+.candidate_body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #d6d6d6;
+  padding: 50px 0px;
+}
+
+.candidate_body .first {
+  background: #ffffff;
+  border: 0.5px solid #deddda;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.candidate_body .sec {
+  background: #ffffff;
+  border: 0.5px solid #deddda;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 780px;
+  width: 100%;
+}
+
+.candidate_body .third {
+  background: #ffffff;
+  border: 0.5px solid #deddda;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  width: 100%;
+}
+.sec .languages {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #737376;
+}
+.sec .main_heading_bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+}
+.sec .header_sec_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_div_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.left_div_buttons span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #737376;
+}
+.right_div_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
 .left_div_buttons .btn_boosted {
   padding: 2px 10px;
-  gap: 10px;
   background: #01dc82;
   border: none;
   border-radius: 100px;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .right_div_buttons .btn1 {
@@ -2834,11 +2922,102 @@ input:checked + .slider:before {
   font-size: 12px;
   line-height: 19px;
 }
-.skills_section_buttons button{
-  width: 131px;
-  height: 25px;
-  background: #E7F0F2;
+.skills_section_buttons .skill_btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #151417;
+}
+.skills_section_buttons button {
+  background: #e7f0f2;
   border-radius: 100px;
+  border: none;
+  padding: 5px 15px;
+}
+.skills_section_buttons button:last-child {
+  font-weight: 500;
+  line-height: 19px;
+  color: #ff6447;
+  background: rgba(255, 100, 71, 0.1);
+}
+.left_div_buttons small {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: #000000;
+}
+.third button{
+background: #FFFFFF;
+border: 0.5px solid #DEDDDA;
+border-radius: 5px;
+}
+
+.skills_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first .laravel{
+  display: flex;
+  gap: 10px;
+}
+.laravel .first_div_buttons{
   
+background: #F5F5F5;
+border-radius: 5px;
+border: none;
+width: 158px;
+height: 25px;
+font-weight: 500;
+font-size: 12px;
+line-height: 19px;
+color: #737376;
+
+}
+.laravel select{
+  
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 5px;
+}
+.skills_div p:first-child{
+  font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #151417;
+
+}
+.skills_div p{
+  font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #3653F6;
+}
+.onboarding p{
+  font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #151417;
+}
+.labels_for_checkbox{
+  font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #151417;
+}
+.onboarding input{
+  border: 1px solid #D6D6D6;
+border-radius: 5px;
+}
+.search_sections p{
+  font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #151417;
+}
+.button_image{
+  display: flex;
+  justify-content: end;
 }
 /* -------------------------------------------------------/* Candidates css end *------------------------------------- */
