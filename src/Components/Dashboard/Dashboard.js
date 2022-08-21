@@ -9,7 +9,7 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import { mainListItems, secondaryListItems } from "./SideNav";
 import Header from "./Header";
-
+import { Icon } from "../../Utilities/Icon"
 
 
 const drawerWidth = 240;
@@ -34,8 +34,8 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen
         }),
-        background : "#F6F6F6",
-        boxShadow : "unset",
+        background: "#F6F6F6",
+        boxShadow: "unset",
     },
     appBarShift: {
         marginLeft: drawerWidth,
@@ -114,11 +114,11 @@ export default function Dashboard() {
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
                 <Toolbar className={classes.toolbar}>
-                        <img  src={require("../../assets/image/png/sidenav.png").default} alt=""  className={clsx(
-                            classes.menuButton,
-                            open && classes.menuButtonHidden
-                        )}  onClick={handleDrawerOpen} />
-                  <Header/>
+                    <img src={Icon.Closearrow} alt="" className={clsx(
+                        classes.menuButton,
+                        open && classes.menuButtonHidden
+                    )} onClick={handleDrawerOpen} />
+                    <Header />
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -131,7 +131,7 @@ export default function Dashboard() {
                 <div className={classes.toolbarIcon}>
                     <h1 className="logo"><a href="/">SQUIRRELL</a></h1>
                     <IconButton onClick={handleDrawerClose}>
-                        <img src={require("../../assets/image/png/sidenav.png").default} alt="" />
+                        <img src={Icon.Openarrow} alt="" />
                     </IconButton>
                 </div>
                 <Divider />
@@ -139,8 +139,73 @@ export default function Dashboard() {
                 <Divider />
                 <List>{secondaryListItems}</List>
             </Drawer>
-            <main className={classes.content}>
+            <main className={classes.content} style={{position:"relative"}}>
                 <div className={classes.appBarSpacer} />
+                <div className="col-md-4 madhouse_music mt_20 mb_20 mr_20 ml_20">
+                    <div className="madhouse_top_first ml_10 mr_10">
+                        <div><span className="letter_circle1">N</span></div>
+                        <div className="pl_20">
+                            <h6>Madhouse Music App</h6>
+                            <p>Music mobile app to stream mixes, which has admin syste, vendor panel, user mobile app.</p>
+                        </div>
+                    </div>
+
+                    <div className="d-flex justify-content-between">
+                        <div className="madhouse_top_sec ml_10 mr_10">
+                            <div><img src={require("../../assets/image/png/profile.png").default} alt="" /></div>
+                            <div className="pl_20"><h6>Uyi Omokaro</h6>
+                                <small>Client from Lagos, Nigeria</small></div>
+                        </div>
+                        <div><img className="mr_10" src={require("../../assets/image/png/arrowright.png").default} alt="" /></div>
+                    </div>
+
+                    <hr />
+
+                    <div className="addicon_button ml_10 mr_10 mb_10">
+                        <button className="button1">Invoice <svg className="ml_60" xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                            <line x1="5.5" y1="0.5" x2="5.5" y2="11.5" stroke="black" />
+                            <line x1="11" y1="6" y2="6" stroke="black" />
+                        </svg></button>
+                        <button className="button2">Documents <svg className="ml_60" xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                            <line x1="5.5" y1="0.5" x2="5.5" y2="11.5" stroke="black" />
+                            <line x1="11" y1="6" y2="6" stroke="black" />
+                        </svg></button>
+                        <button className="button3">Meeting<svg className="ml_60" xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                            <line x1="5.5" y1="0.5" x2="5.5" y2="11.5" stroke="black" />
+                            <line x1="11" y1="6" y2="6" stroke="black" />
+                        </svg></button>
+                    </div>
+                    <hr />
+
+                    <div className="madhouse_bootom_section">
+                        <p>Members and cost</p>
+
+                        <div className="edit_box_header">
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span></div>
+                                <div><span className="designation pl_5 pr_5">74hr . 30min</span><span className="designation pl_5 pr_5">$760</span></div></div>
+                        </div>
+                        <hr />
+                        <div className="edit_box_header">
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Vrunda</span></div>
+                            <div><span className="designation pl_5 pr_5">14hr . 11min</span><span className="designation pl_5 pr_5">$160</span></div></div>
+                        </div>
+                        <hr />
+                        <div className="edit_box_header">
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span></div>
+                            <div><span className="designation pl_5 pr_5">41hr . 00min</span><span className="designation pl_5 pr_5">$560</span></div></div>
+                        </div>
+                        <hr />
+                        <div className="edit_box_header">
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik</span></div>
+                            <div><span className="designation pl_5 pr_5">54hr . 15min</span><span className="designation pl_5 pr_5">$110</span></div></div>
+                        </div>
+                        <hr />
+                        <div className="edit_box_header">
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik</span></div>
+                            <div><span className="designation pl_5 pr_5">63hr . 35min</span><span className="designation pl_5 pr_5">$150</span></div></div>
+                        </div>
+                    </div>
+                </div>
 
             </main>
         </div>

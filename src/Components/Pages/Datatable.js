@@ -1,5 +1,4 @@
 import React from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -9,9 +8,9 @@ import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import { mainListItems, secondaryListItems } from "../Dashboard/SideNav";
-import Header from "../Dashboard/Header";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import { Icon } from "../../Utilities/Icon"
 
 const drawerWidth = 240;
 
@@ -35,8 +34,9 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    background: "#F6F6F6",
     boxShadow: "unset",
+    background: "#FFFFFF",
+    borderBottom: "1px solid #E1E3E9",
   },
   appBarShift: {
     marginLeft: drawerWidth,
@@ -112,10 +112,10 @@ export default function Datatable() {
 
   return (
     <div className={classes.root}>
-      <AppBar className={clsx(classes.appBar, open && classes.appBarShift)}>
+      <AppBar className={clsx(classes.appBar, open && classes.appBarShift)} >
         <Toolbar className={classes.toolbar}>
           <img
-            src={require("../../assets/image/png/sidenav.png").default}
+            src={Icon.Closearrow}
             alt=""
             className={clsx(
               classes.menuButton,
@@ -123,7 +123,35 @@ export default function Datatable() {
             )}
             onClick={handleDrawerOpen}
           />
-          <Header />
+          <div className="members_header">
+            <h2>Members</h2>
+            <div className="d-flex justify-content-center align-items-center header_select_selection">
+              <div class="custom-select-documents" style={{ width: "100px" }}>
+                <select>
+                  <option value="0">By region</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+              <div class="custom-select-documents" style={{ width: "135px" }}>
+                <select>
+                  <option value="0">By Designerion</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+              <div class="custom-select-documents" style={{ width: "100px" }}>
+                <select>
+                  <option value="0">By Role</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -139,7 +167,7 @@ export default function Datatable() {
           </h1>
           <IconButton onClick={handleDrawerClose}>
             <img
-              src={require("../../assets/image/png/sidenav.png").default}
+              src={Icon.Openarrow}
               alt=""
             />
           </IconButton>
@@ -151,243 +179,274 @@ export default function Datatable() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <div className="documents_header mb_10">
-          <h2>Members</h2>
-          <div className="d-flex justify-content-center align-items-center header_select_selection">
-            <div class="custom-select-documents" style={{ width: "148px" }}>
-              <select>
-                <option value="0">By region</option>
-                <option value="1">None</option>
-                <option value="2">One</option>
-                <option value="3">Two</option>
-              </select>
-            </div>
-            <div class="custom-select-documents" style={{ width: "148px" }}>
-              <select>
-                <option value="0">By Designerion</option>
-                <option value="1">None</option>
-                <option value="2">One</option>
-                <option value="3">Two</option>
-              </select>
-            </div>
-            <div class="custom-select-documents" style={{ width: "148px" }}>
-              <select>
-                <option value="0">By Role</option>
-                <option value="1">None</option>
-                <option value="2">One</option>
-                <option value="3">Two</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div >
-        <hr />
-          <div className="d-flex full_member_div">
-          <p>Full Members (14)</p> 
-         <p>Invited (2)</p>
-          </div>
-          <form class="form-inline d-flex justify-content-start align-items-center ">
-          <div className="member_search ">
-          <form class="form-inline d-flex justify-content-start align-items-center">
-          <img  src={require("../../assets/image/png/search.png").default} pl_5/>
-          <input
-            class="form-control mr-sm-2 border-0 ml_5 pl_35"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
-          </div>
-          <div className=" rightside_div pl_10">
-          <i class="fa fa-user icon"></i>
-          <input type="text" id="fname" name="fname" placeholder="Invite by email" className="invite_member"
-          />
-          <select name="City" className="select_member">
-          <option value="">Member</option>
-          <option value="">city</option>
-          <option value="">city</option>
-          <option value="">city</option>
-        </select>
-        <button className="btn_invite">Invite</button>
-          </div>
-          </form>
-        </div>
-        <div className="consultation_card_box mt_20">
-          <div class="table-responsive">
-            <table class="table datatable_table">
-              <thead>
-                <tr className="consultation_table_head">
-                  <th className="consultation_table_head_text">Full Name</th>
-                  <th className="consultation_table_head_text">Designation</th>
-                  <th className="consultation_table_head_text">Monthly</th>
-                  <th className="consultation_table_head_text">Daily</th>
-                  <th className="consultation_table_head_text">Hourly</th>
-                  <th className="consultation_table_head_text">Region</th>
-                  <th className="consultation_table_head_text">Role</th>
-                  <th className="consultation_table_head_text">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="datatable_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Admin</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
 
-                <tr className="consultation_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Project Manag</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="consultation_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Employee</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="consultation_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Employee</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="consultation_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Employee</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="consultation_table_body_row">
-                  <td className="datatable_table_body_text">Rushabh Patel</td>
-                  <td className="datatable_table_body_text">
-                    CEO & Sr. UIUX Designer
-                  </td>
-                  <td className="datatable_table_body_text">₹ 80,000 </td>
-                  <td className="datatable_table_body_text">₹ 4000 </td>
-                  <td className="datatable_table_body_text">₹ 1200 </td>
-                  <td className="datatable_table_body_text">Vadodara, IN</td>
-                  <td className="datatable_table_body_text">
-                    <select name="City" className="select_role">
-                      <option value="">Employee</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                      <option value="">city</option>
-                    </select>
-                  </td>
-                  <td className="datatable_table_body_text">
-                    <div className="toggle-switch">
-                      <label class="switch">
-                        <input type="checkbox" />
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <div className="members_div row">
+          <div className="col-md-9">
+            <div>
+              <form class="form-inline members_form_group">
+                <div className="member_search">
+                  <img className="searchicon" src={require("../../assets/image/png/search.png").default} pl_5 />
+                  <input
+                    class="form-control border-0 pl_35"
+                    type="search"
+                    placeholder="Search Members"
+                    aria-label="Search"
+                  />
+                </div>
+
+
+                <div className="rightside_div">
+                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                  <input type="text" id="fname" name="fname" placeholder="Invite by email" className="invite_member" />
+                  <select name="City" className="select_member">
+                    <option value="">Member</option>
+                    <option value="">city</option>
+                    <option value="">city</option>
+                    <option value="">city</option>
+                  </select>
+                  <button className="btn_invite">Invite</button>
+                </div>
+              </form>
+
+              <div className="full_member_div mt_50">
+                <p>Full Members (14)</p>
+                <p>Invited (2)</p>
+              </div>
+            </div>
+            <div className="member_card_box">
+              <div class="table-responsive">
+                <table class="table datatable_table">
+                  <thead>
+                    <tr className="member_table_head">
+                      <th className="member_table_head_text">Full Name</th>
+                      <th className="member_table_head_text">Designation</th>
+                      <th className="member_table_head_text">Monthly</th>
+                      <th className="member_table_head_text">Daily</th>
+                      <th className="member_table_head_text">Hourly</th>
+                      <th className="member_table_head_text">Region</th>
+                      <th className="member_table_head_text">Role</th>
+                      <th className="member_table_head_text">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Rushabh Patel</td>
+                      <td className="member_table_body_text">
+                        CEO & Sr. UIUX Designer
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Admin</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Jay Patel</td>
+                      <td className="member_table_body_text">
+                        Sr. UIUX Designer
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Project Manag</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Rutvik Jolapara</td>
+                      <td className="member_table_body_text">
+                        Project Manager
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Employee</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Deepan Panchani</td>
+                      <td className="member_table_body_text">
+                        Project Manager
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Employee</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Vrusti Patel</td>
+                      <td className="member_table_body_text">
+                        Sr. Flutter Developer
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Employee</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr className="member_table_body_row">
+                      <td className="member_table_body_text">Abhik Patel</td>
+                      <td className="member_table_body_text">
+                        UX Designer
+                      </td>
+                      <td className="member_table_body_text">₹ 80,000 </td>
+                      <td className="member_table_body_text">₹ 4000 </td>
+                      <td className="member_table_body_text">₹ 1200 </td>
+                      <td className="member_table_body_text">Vadodara, IN</td>
+                      <td className="member_table_body_text">
+                        <select name="City" className="select_role">
+                          <option value="">Employee</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                          <option value="">city</option>
+                        </select>
+                      </td>
+                      <td className="member_table_body_text">
+                        <div className="toggle-switch">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
+
+
+          <div className="members_salary_incentive col-md-3">
+            <h6>Salary analytics</h6>
+
+            <div className="salary-description">
+              <p><span>Monthly </span><span style={{ color: "#737376" }}>( 22 days )</span></p>
+              <p style={{ color: "#737376" }}>₹ 3,44,000 </p>
+            </div>
+            <div className="salary-description">
+              <p><span>Daily</span><span style={{ color: "#737376" }}>( 8 hours )  </span></p>
+              <p style={{ color: "#737376" }}>₹ 15,600</p>
+            </div>
+            <div className="salary-description">
+              <p><span>Hourly</span><span style={{ color: "#737376" }}></span></p>
+              <p style={{ color: "#737376" }}>₹ 1950</p>
+            </div>
+
+            <hr />
+
+
+            <div className="deparment_wise d-flex justify-content-between mb_5">
+              <div>
+                <h6>Department wise</h6>
+              </div>
+
+              <div class="custom-select-activity">
+                <select>
+                  <option value="0">Monthly</option>
+                  <option value="1">Anually</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="salary-description">
+              <p><span>Design</span></p>
+              <p style={{ color: "#737376" }}>₹ 1,30,000 /m</p>
+            </div>
+            <div className="salary-description">
+              <p><span>Mobile developer</span></p>
+              <p style={{ color: "#737376" }}>₹ 2,15,000 /m</p>
+            </div>
+            <div className="salary-description">
+              <p><span>Management</span></p>
+              <p style={{ color: "#737376" }}>₹ 90,000 /m</p>
+            </div>
+            <div className="salary-description">
+              <p><span>Web developer</span></p>
+              <p style={{ color: "#737376" }}>₹ 80,000 /m</p>
+            </div>
+          </div>
+
+
+
         </div>
       </main>
     </div>

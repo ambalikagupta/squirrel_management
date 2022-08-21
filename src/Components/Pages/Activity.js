@@ -16,6 +16,7 @@ import "../../assets/css/responsive.css";
 import Typography from '@mui/material/Typography';
 import Modal from "react-bootstrap/Modal";
 import TextEditor from "../RteEditor/TextEditor";
+import { Icon } from "../../Utilities/Icon"
 
 
 
@@ -144,7 +145,7 @@ export default function Activity() {
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
                 <Toolbar className={classes.toolbar}>
-                    <img  src={require("../../assets/image/png/sidenav.png").default} alt="" className={clsx(
+                    <img  src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
                     )} onClick={handleDrawerOpen} />
@@ -161,7 +162,7 @@ export default function Activity() {
                 <div className={classes.toolbarIcon}>
                     <h1 className="logo"><a href="/">SQUIRRELL</a></h1>
                     <IconButton onClick={handleDrawerClose}>
-                        <img src={require("../../assets/image/png/sidenav.png").default} alt="" />
+                        <img src={Icon.Openarrow} alt="" />
                     </IconButton>
                 </div>
                 <Divider />

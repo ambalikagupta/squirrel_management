@@ -12,7 +12,7 @@ import NFTmarketplace from './Components/Pages/NFTmarketplace';
 import Datatable from './Components/Pages/Datatable';
 import Setting from './Components/Pages/Setting';
 import Candidates from './Components/Pages/Candidates';
-
+import Profile from './Components/Pages/Profile';
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
           <Route path='/datatable' element={<Datatable />} />
           <Route path='/setting' element={<Setting/>} />
           <Route path='/candidates' element={<Candidates/>} />
+          <Route path='/profile' element={<Profile/>} />
         </Routes>
       </Router>
     </>

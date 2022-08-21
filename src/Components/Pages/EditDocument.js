@@ -4,6 +4,7 @@ import "../../assets/css/responsive.css";
 import {Container} from "react-bootstrap";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
+import { Icon } from "../../Utilities/Icon"
 
 
 
@@ -14,7 +15,7 @@ export default function EditDocument() {
         <div>
             <main>
             <div className="document_header">
-                <div className="d-flex justify-content-center align-items-center"><img src={require("../../assets/image/png/backarrow.png").default} alt=""/>
+                <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt=""/>
                     <h2>Enter document title here <br /> <span className="text-muted">Creating new document</span></h2></div>
                     <div className="d-flex justify-content-center align-items-center">
                         <div className="document_button mt_10 mb_10">

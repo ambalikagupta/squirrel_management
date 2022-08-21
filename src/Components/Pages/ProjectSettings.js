@@ -13,6 +13,7 @@ import Header from "../Dashboard/Header";
 import Form from "react-bootstrap/Form";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import { Icon } from "../../Utilities/Icon"
 
 const drawerWidth = 240;
 
@@ -116,7 +117,7 @@ export default function Projectsetting() {
             <AppBar className={clsx(classes.appBar, open && classes.appBarShift)}>
                 <Toolbar className={classes.toolbar}>
                     <img
-                        src={require("../../assets/image/png/sidenav.png").default}
+                        src={Icon.Closearrow}
                         alt=""
                         className={clsx(
                             classes.menuButton,
@@ -140,7 +141,7 @@ export default function Projectsetting() {
                     </h1>
                     <IconButton onClick={handleDrawerClose}>
                         <img
-                            src={require("../../assets/image/png/sidenav.png").default}
+                            src={Icon.Openarrow}
                             alt=""
                         />
                     </IconButton>

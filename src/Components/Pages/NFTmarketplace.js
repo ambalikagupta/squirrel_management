@@ -9,6 +9,7 @@ import { Snackbar } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import KeyboardArrowDownRoundedIcon from "@material-ui/icons/KeyboardArrowDownRounded";
 import clsx from "clsx";
+import { Icon } from "../../Utilities/Icon"
 
 
 export default function NFTmarketplace() {
@@ -44,7 +45,7 @@ export default function NFTmarketplace() {
         <div>
             <main>
                 <div className="document_header">
-                    <div className="d-flex justify-content-center align-items-center"><img src={require("../../assets/image/png/backarrow.png").default} alt="" />
+                    <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt="" />
                         <h2>NFT Marketplace Proposal <br /> <span className="text-muted">Last Updated 15 June 2022 by Rushabh patel</span></h2></div>
                     <div className="d-flex justify-content-center align-items-center">
                         <div className="document_button mt_10 mb_10">

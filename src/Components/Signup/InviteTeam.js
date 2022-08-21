@@ -19,8 +19,8 @@ function SignUp() {
                         <p className='new_account'>Create new Account</p>
                         <hr className='mt_20 mb_20' />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5'>Personal Deatils <img className='pl_5' src={require("../../assets/image/png/Vector.png").default}></img></h6>
-                            <p className='company_information'>Your  company’s information<img className='pl_5' src={require("../../assets/image/png/Vector.png").default}></img></p>
+                            <h6 className='pt_5 pb_5'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
+                            <p className='company_information'>Your  company’s information<img className='pl_5'  src={Icon.Check}></img></p>
                             <p className='team'>Team</p>
                         </div>
                     </div>
