@@ -46,7 +46,7 @@ export default function NFTmarketplace() {
             <main>
                 <div className="document_header">
                     <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt="" />
-                        <h2>NFT Marketplace Proposal <br /> <span className="text-muted">Last Updated 15 June 2022 by Rushabh patel</span></h2></div>
+                        <h2>NFT Marketplace Proposal <img className="pl_5" src={require("../../assets/image/png/nfteditpic.png").default} alt="" /><br /> <span className="text-muted">Last Updated <span className="text-muted2">15 June 2022 </span> by <span className="text-muted2">Rushabh patel</span> </span></h2></div>
                     <div className="d-flex justify-content-center align-items-center">
                         <div className="document_button mt_10 mb_10">
                             <div>

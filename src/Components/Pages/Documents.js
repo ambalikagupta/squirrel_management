@@ -145,6 +145,7 @@ export default function Documents() {
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
                 <div className="documents_header">
+                
                     <h2>Documents</h2>
                     <div className="d-flex justify-content-center align-items-center">
                         <div class="custom-select-documents" style={{ width: "148px" }}>
@@ -167,7 +168,9 @@ export default function Documents() {
                             </form>
                         </div>
                     </div>
+                
                 </div>
+               
                 <div class="cards_documents">
                     <div class="col-md-3 mb_10">
                         <div class="card">

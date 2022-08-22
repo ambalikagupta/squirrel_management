@@ -207,7 +207,7 @@ export default function Profile() {
                   <p>
                     Jay Patel
                     <svg
-                      className="ml_5"
+                      className="ml_20"
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
                       height="20"
@@ -231,7 +231,7 @@ export default function Profile() {
                     Sr. UIUX Designer with 7 years of exp. on 150+ projects.
                   </p>
                   <span>
-                    Sr. UIUX Designer with 7 years of exp. on 150+ projects.
+                  From Vadodara, Gujarat, India
                   </span>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function Profile() {
                     <p className="overview">
                       About
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"

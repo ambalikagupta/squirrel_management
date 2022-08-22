@@ -61,12 +61,11 @@ export default function Candidate() {
 
 
             <div className="content-tabs">
-
-                <div
-                    className={toggleState === 1 ? "content active-content" : "content"}
-                >
+ 
+                <div className={toggleState === 1 ? "content active-content" : "content"} >
+                
                     <div>
-
+                    
                         <div className="row candidate_body">
                             <div className="first col-md-3">
                                 <div className="skills_div">

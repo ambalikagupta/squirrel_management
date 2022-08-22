@@ -22,7 +22,7 @@ function Login() {
           <div className="loginpage_field">
             <div className="divider">
               <h2 className="">Login with <span className='font-weight-bold'>SQUIRRELL</span></h2>
-              <p className="">Enter your Details below</p>
+              <p className="">Enter your details below</p>
             </div>
 
             <MDBInput className='logininput_field' wrapperClass='mt_40 mb-4' placeholder='Enter your email' id='formControlLg' type='email' size="lg" />

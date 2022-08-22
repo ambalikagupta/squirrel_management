@@ -17,7 +17,7 @@ function SignUp() {
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
                         <p className='new_account'>Create new Account</p>
-                        <hr className='mt_20 mb_20' />
+                        <hr style={{color:"white"}} className='mt_20 mb_20' />
                         <div className='signup_details'>
                             <h6 className='pt_5 pb_5'>Personal Deatils</h6>
                             <p>Yours Company Name</p>
@@ -53,14 +53,14 @@ function SignUp() {
 
                         <div className="signup_divider">
                             <h2 className="">What’s your full name?</h2>
-                            <p className="">Enter your Details</p>
+                            <p className="">Enter your details bellow</p>
                         </div>
 
                         <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='First Name' id='formControlLg' type='text' size="lg" />
                         <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='Last Name' id='formControlLg' type='text' size="lg" />
                         <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='Enter your email' id='formControlLg' type='email' size="lg" />
                         <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='Passowrd' id='formControlLg' type='password' size="lg" />
-                        <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='Reset Passowrd' id='formControlLg' type='resetpassword' size="lg" />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='Re Password' id='formControlLg' type='resetpassword' size="lg" />
 
                         <div className="signup_button d-flex justify-content-end mb-4">
                           <Link to='/companydetails'>  <button className="btn-primary pt_5 pl_30 pb_5 pr_30 ">Next</button></Link>

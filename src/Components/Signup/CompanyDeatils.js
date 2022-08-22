@@ -47,6 +47,7 @@ function CompanyDeatils() {
                             defaultValue={selectedOption}
                             onChange={setSelectedOption}
                             options={document}
+                            placeholder="Company Location"
                         />
                         <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Describe your company in 20 words.' id='formControlLg' type='text' size="lg" />
                         <MDBTextArea className='signupinput_field' contrast id='textAreaExample' placeholder='Long description about your company' rows={4}></MDBTextArea>
@@ -61,6 +62,7 @@ function CompanyDeatils() {
                             defaultValue={selectedOption1}
                             onChange={setSelectedOption1}
                             options={document1}
+                            placeholder="No. of employees?"
                         />
 
                         <div className="signup_button d-flex justify-content-end mb-4">

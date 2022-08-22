@@ -828,7 +828,7 @@
 }
 
 .signup_sidenav {
-  margin: 80px 20px;
+  margin: 142px 20px;
 }
 
 .signup_sidenav .new_account {
@@ -1607,7 +1607,11 @@
   margin-left: 0px;
   margin-right: 20px;
 }
-
+.text-muted2{
+  color:#151417;
+  font-weight: 500;
+font-size: 12px;
+}
 .document_header {
   display: flex;
   justify-content: space-between;
