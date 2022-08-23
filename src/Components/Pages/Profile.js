@@ -12,7 +12,7 @@ import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 import { Icon } from "../../Utilities/Icon"
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     position: "relative",
     whiteSpace: "nowrap",
+    '&::-webkit-scrollbar': {
+      display: "none"
+     },
     width: drawerWidth,
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
@@ -84,7 +87,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     overflow: "auto",
     margin: "20px 20px",
-  },
+    '&::-webkit-scrollbar': {
+       display: "none"
+      },
+},
   container: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
@@ -177,7 +183,7 @@ export default function Profile() {
         <Divider />
         <List>{secondaryListItems}</List>
       </Drawer>
-      <main className={classes.content}>
+      <main>
         <div className={classes.appBarSpacer} style={{ minHeight: "45px" }} />
         <div>
           <div className="content-tabs">
@@ -275,7 +281,7 @@ export default function Profile() {
                     <p className="mb_5">
                       Skills{" "}
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -349,7 +355,7 @@ export default function Profile() {
                     <p className="mb_5">
                       Industry Experience{" "}
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -386,7 +392,7 @@ export default function Profile() {
                     <p className="overview">
                       Certifications
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -416,7 +422,7 @@ export default function Profile() {
                     <p className="overview">
                       Other Experiences{" "}
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -446,7 +452,7 @@ export default function Profile() {
                     <p className="overview">
                       Employment history
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -466,12 +472,12 @@ export default function Profile() {
                         />
                       </svg>
                     </p>
-                    <p>
+                    <p className="april_designer">
                       Sr. UIUX Designer | Wolf Soft Pvt. Ltd. | April 2015 -
                       Present - 7 yrs 5 months{" "}
                       <span>
                         <svg
-                          className="ml_5"
+                          className="ml_15"
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
                           height="20"
@@ -493,7 +499,7 @@ export default function Profile() {
                       </span>
                       <span>
                         <svg
-                          className="ml_5"
+                          className="ml_15"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -518,11 +524,11 @@ export default function Profile() {
                     </p>
                   </div>
 
-                  <div className="overview_section mt_25">
+                  <div className="overview_section mt_30">
                     <p className="overview">
                       Portfolio ( 2 )
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -555,13 +561,13 @@ export default function Profile() {
                             />
                             <div className="documents_text">
                               <h6>
-                                <span className="scope_work">
+                                <span className="scope_work_profile">
                                   Admin management App design
                                 </span>
                               </h6>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="20"
                                   height="20"
@@ -583,7 +589,7 @@ export default function Profile() {
                               </span>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
                                   height="24"
@@ -621,13 +627,13 @@ export default function Profile() {
                             />
                             <div className="documents_text">
                               <h6>
-                                <span className="scope_work">
+                                <span className="scope_work_profile">
                                   Admin management App design
                                 </span>
                               </h6>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="20"
                                   height="20"
@@ -649,7 +655,7 @@ export default function Profile() {
                               </span>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
                                   height="24"
@@ -687,13 +693,13 @@ export default function Profile() {
                             />
                             <div className="documents_text">
                               <h6>
-                                <span className="scope_work">
+                                <span className="scope_work_profile">
                                   Admin management App design
                                 </span>
                               </h6>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="20"
                                   height="20"
@@ -715,7 +721,7 @@ export default function Profile() {
                               </span>
                               <span>
                                 <svg
-                                  className="ml_5"
+                                  className="ml_15"
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="24"
                                   height="24"
@@ -751,7 +757,7 @@ export default function Profile() {
                     <p className="mb_5">
                       About
                       <svg
-                        className="ml_5"
+                        className="ml_15"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -808,10 +814,7 @@ export default function Profile() {
                     </div>
 
                     <div className="sidenav_bottom_div">
-                      <a href="#">
-                        <span className="letter_circle1">M</span>
-                        <span className="pl_30">Madhouse Music App</span>
-                      </a>
+                      
                       <a href="#">
                         <span className="letter_circle2">N</span>
                         <span className="pl_30">NFT Marketplace</span>

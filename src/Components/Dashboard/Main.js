@@ -9,6 +9,6 @@ function Main() {
     <Dashboard />
   </Fragment>
   )
-}
+  }
 
 export default Main;

@@ -22,7 +22,7 @@ function CompanyDeatils() {
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
                         <p className='new_account'>Create new Account</p>
-                        <hr className='mt_20 mb_20' />
+                        <hr className='mt_20 mb_20'style={{border: "1px solid rgba(255, 255, 255, 0.2)"}}  />
                         <div className='signup_details'>
                             <h6 className='pt_5 pb_5'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
                             <p className='company_information'>Your  company’s information</p>
@@ -52,7 +52,7 @@ function CompanyDeatils() {
                         <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Describe your company in 20 words.' id='formControlLg' type='text' size="lg" />
                         <MDBTextArea className='signupinput_field' contrast id='textAreaExample' placeholder='Long description about your company' rows={4}></MDBTextArea>
 
-                        <div className="signup_divider mt_30" style={{fontSize:"16px"}}>
+                        <div className="signup_divider mt_35" style={{fontSize:"16px"}}>
                             <p className="font-weight-bold text-dark">Markets</p>
                         </div>
 

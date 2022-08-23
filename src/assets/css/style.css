@@ -79,7 +79,6 @@
   margin-top: 100px;
 }
 
-
 /*------------------------------------------Margin Top End--------------------------------------------------*/
 /*------------------------------------------Margin Bottom Start------------------------------------------------*/
 .mb_5 {
@@ -737,7 +736,7 @@
 }
 
 .loginpage_field {
-  max-width: 500px;
+  max-width: 360px;
   margin: 80px auto;
   width: 100%;
   padding: 5px 10px;
@@ -883,6 +882,7 @@
   line-height: 32px;
   letter-spacing: 0.02em;
   color: #151417;
+  margin-top: 69px;
 }
 
 .signup_divider p {
@@ -1179,7 +1179,7 @@
   background: #fff1a6;
   border-radius: 50%;
   padding: 6px 8px;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1191,7 +1191,7 @@
 }
 
 .madhouse_top_first h6 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1200,7 +1200,7 @@
 }
 
 .madhouse_top_first p {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1209,22 +1209,22 @@
 }
 
 .madhouse_top_sec h6 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #3653F6;
+  color: #3653f6;
   margin-bottom: 0 !important;
 }
 
 .madhouse_top_sec small {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .addicon_button {
@@ -1251,15 +1251,15 @@
 }
 
 .addicon_button .button1 {
-  background: #A6E4FF;
+  background: #a6e4ff;
 }
 
 .addicon_button .button2 {
-  background: #FFF1A6;
+  background: #fff1a6;
 }
 
 .addicon_button .button3 {
-  background: #FFA8D0;
+  background: #ffa8d0;
 }
 
 .madhouse_bootom_section {
@@ -1269,7 +1269,7 @@
 }
 
 .madhouse_bootom_section p {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -1607,10 +1607,10 @@
   margin-left: 0px;
   margin-right: 20px;
 }
-.text-muted2{
-  color:#151417;
+.text-muted2 {
+  color: #151417;
   font-weight: 500;
-font-size: 12px;
+  font-size: 12px;
 }
 .document_header {
   display: flex;
@@ -1892,7 +1892,7 @@ input:checked + .slider:before {
 }
 
 .members_header h2 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1908,7 +1908,7 @@ input:checked + .slider:before {
 }
 
 .member_search {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e2e2e2;
@@ -1931,12 +1931,12 @@ input:checked + .slider:before {
 }
 
 .form-inline input::placeholder {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  color: #7F8197;
+  color: #7f8197;
 }
 
 .rightside_div {
@@ -1944,7 +1944,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .invite_member {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   width: 225px;
   font-size: 13px;
   line-height: 16px;
@@ -1962,7 +1962,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .select_member {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   width: 101px;
   font-weight: 600;
   font-size: 13px;
@@ -1973,7 +1973,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .btn_invite {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   width: 101px;
   border: none;
   font-weight: 500;
@@ -1993,7 +1993,7 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:first-child {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -2002,8 +2002,8 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:last-child {
-  font-family: 'SF Pro Display';
- color: #8b8b8b;
+  font-family: "SF Pro Display";
+  color: #8b8b8b;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -2011,13 +2011,13 @@ input:checked + .slider:before {
 }
 
 .member_card_box {
-  background: #FFFFFF;
-  border: 1px solid #E8ECF4;
+  background: #ffffff;
+  border: 1px solid #e8ecf4;
   border-radius: 10px;
 }
 
 .member_table_head {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -2031,7 +2031,7 @@ input:checked + .slider:before {
 }
 
 .member_table_body_row {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2043,7 +2043,7 @@ input:checked + .slider:before {
   border: none;
   padding: 0px;
   word-break: break-word;
-  border-left: 2px solid #3653F6;
+  border-left: 2px solid #3653f6;
 }
 
 .members_salary_incentive {
@@ -2051,7 +2051,7 @@ input:checked + .slider:before {
 }
 
 .members_salary_incentive h6 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -2068,22 +2068,19 @@ input:checked + .slider:before {
 }
 
 .salary-description p {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
 }
 
-
-
-
 /* -------------------------------------------------------/* Datatable css end *------------------------------------- */
 /* -------------------------------------------------------/* Settings css start *------------------------------------- */
 
 .block-tabs {
   display: flex;
-  border-bottom: 1px solid #E1E3E9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .tabs {
@@ -2095,7 +2092,7 @@ input:checked + .slider:before {
   outline: none;
   background: white;
   border: none;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -2105,8 +2102,8 @@ input:checked + .slider:before {
 }
 
 .tabs-active {
-  color: #3653F6;
-  border-bottom: 2px solid #3653F6;
+  color: #3653f6;
+  border-bottom: 2px solid #3653f6;
 }
 
 .content {
@@ -2124,8 +2121,8 @@ input:checked + .slider:before {
   align-items: center;
   gap: 15px;
   padding: 25px 0px;
-  font-family: 'SF Pro Display';
-  border-bottom: 1px solid #E1E3E9;
+  font-family: "SF Pro Display";
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .wolfsoft_div {
@@ -2164,7 +2161,7 @@ input:checked + .slider:before {
 }
 
 .organization_tab_div {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   margin: 0 !important;
 }
 
@@ -2223,25 +2220,25 @@ input:checked + .slider:before {
 }
 
 .specialities_button button {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.03em;
   color: #242529;
   padding: 5px 20px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border-radius: 100px;
   border: none;
 }
 
 .company_details_locations {
-  border-left: 1px solid #E1E3E9;
+  border-left: 1px solid #e1e3e9;
 }
 
 .company_details_locations h6 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -2256,7 +2253,7 @@ input:checked + .slider:before {
 }
 
 .address_description {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2264,7 +2261,7 @@ input:checked + .slider:before {
 }
 
 .small_addons_description p {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2273,7 +2270,7 @@ input:checked + .slider:before {
   margin-bottom: 10px;
 }
 
-/* -------------------------------------------------------/* Settings css end *------------------------------------- *//* -------------------------------------------------------/* Candidates css start *------------------------------------- */
+/* -------------------------------------------------------/* Settings css end *------------------------------------- */ /* -------------------------------------------------------/* Candidates css start *------------------------------------- */
 /* -------------------------------------------------------/* Cnadidate css start *------------------------------------- */
 
 .candidate_navigation {
@@ -2291,7 +2288,7 @@ input:checked + .slider:before {
   background-color: #d6d6d6d6;
   padding: 50px 0px;
   margin: 0 !important;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   /* column-gap: 13px; */
 }
 
@@ -2303,8 +2300,17 @@ input:checked + .slider:before {
   padding: 10px;
 }
 
-
-.candidate_body .sec .sec-first,.candidate_body .sec .sec-second,.candidate_body .sec .sec-third,.candidate_body .sec .sec-fourth,.candidate_body .sec .sec-fifth,.candidate_body .sec .sec-sixth,.candidate_body .sec .sec-seventh,.candidate_body .sec .sec-eight,.candidate_body .sec .sec-ninth,.candidate_body .sec .sec-tenth,.candidate_body .sec .sec-eleventh{
+.candidate_body .sec .sec-first,
+.candidate_body .sec .sec-second,
+.candidate_body .sec .sec-third,
+.candidate_body .sec .sec-fourth,
+.candidate_body .sec .sec-fifth,
+.candidate_body .sec .sec-sixth,
+.candidate_body .sec .sec-seventh,
+.candidate_body .sec .sec-eight,
+.candidate_body .sec .sec-ninth,
+.candidate_body .sec .sec-tenth,
+.candidate_body .sec .sec-eleventh {
   background: #ffffff;
   border: 0.5px solid #deddda;
   border-radius: 5px;
@@ -2431,6 +2437,33 @@ input:checked + .slider:before {
   border: none;
   padding: 5px 15px;
 }
+.skills_section_buttons_two {
+  display: flex;
+  gap: 10px;
+}
+
+.skills_section_buttons_two .btn1 {
+  padding: 5px 30px;
+  border: 1px solid #151417;
+  border-radius: 100px;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242529;
+}
+.skills_section_buttons_two .btn2 {
+  border: 1px solid #151417;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #242529;
+  padding: 5px 40px;
+  background: #ffffff;
+}
 
 .skills_section_buttons button:last-child {
   font-weight: 500;
@@ -2448,8 +2481,8 @@ input:checked + .slider:before {
 }
 
 .third button {
-  background: #FFFFFF;
-  border: 0.5px solid #DEDDDA;
+  background: #ffffff;
+  border: 0.5px solid #deddda;
   border-radius: 5px;
 }
 
@@ -2473,7 +2506,7 @@ input:checked + .slider:before {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #3653F6;
+  color: #3653f6;
   margin-bottom: 0;
 }
 
@@ -2485,7 +2518,7 @@ input:checked + .slider:before {
 }
 
 .laravel .first_div_buttons {
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 5px;
   border: none;
   width: 200px;
@@ -2499,12 +2532,10 @@ input:checked + .slider:before {
 }
 
 .laravel select {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   border-radius: 5px;
 }
-
-
 
 .onboarding p {
   font-weight: 600;
@@ -2521,7 +2552,7 @@ input:checked + .slider:before {
 }
 
 .onboarding input {
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
   border-radius: 5px;
 }
 
@@ -2547,9 +2578,23 @@ input:checked + .slider:before {
   width: 100%;
   gap: 15px;
 }
-
+.april_designer {
+  border: 1px solid #e1e3e9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 68%;
+}
+.documents_text .scope_work_profile {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #737376;
+}
 .profile_header h2 {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2570,6 +2615,5 @@ input:checked + .slider:before {
   height: 217px;
   padding: 10px;
 }
-
 
 /* -------------------------------------------------------/* Profile css end *------------------------------------- */

@@ -14,7 +14,7 @@ import "../../assets/css/responsive.css";
 import { Icon } from "../../Utilities/Icon"
 
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -84,7 +84,10 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         height: "100vh",
         overflow: "auto",
-        margin: "20px 20px"
+        margin: "20px 20px",
+        '&::-webkit-scrollbar': {
+           display: "none"
+          },
     },
     container: {
         paddingTop: theme.spacing(4),

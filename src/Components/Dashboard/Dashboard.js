@@ -12,7 +12,7 @@ import Header from "./Header";
 import { Icon } from "../../Utilities/Icon"
 
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -57,6 +57,9 @@ const useStyles = makeStyles(theme => ({
     drawerPaper: {
         position: "relative",
         whiteSpace: "nowrap",
+        '&::-webkit-scrollbar': {
+            display: "none"
+           },
         width: drawerWidth,
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
@@ -81,7 +84,11 @@ const useStyles = makeStyles(theme => ({
         flexDirection: "column",
         flexGrow: 1,
         height: "100vh",
-        overflow: "auto"
+        overflow: "auto",
+        margin: "20px 20px",
+        '&::-webkit-scrollbar': {
+           display: "none"
+          },
     },
     container: {
         paddingTop: theme.spacing(4),
@@ -152,7 +159,7 @@ export default function Dashboard() {
 
                     <div className="d-flex justify-content-between">
                         <div className="madhouse_top_sec ml_10 mr_10">
-                            <div><img src={require("../../assets/image/png/profile.png").default} alt="" /></div>
+                            <div><img src={require("../../assets/image/png/uyi.png").default} alt="" /></div>
                             <div className="pl_20"><h6>Uyi Omokaro</h6>
                                 <small>Client from Lagos, Nigeria</small></div>
                         </div>
@@ -186,22 +193,22 @@ export default function Dashboard() {
                         </div>
                         <hr />
                         <div className="edit_box_header">
-                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Vrunda</span></div>
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/varunda.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Vrunda</span></div>
                             <div><span className="designation pl_5 pr_5">14hr . 11min</span><span className="designation pl_5 pr_5">$160</span></div></div>
                         </div>
                         <hr />
                         <div className="edit_box_header">
-                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span></div>
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jaypatel.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span></div>
                             <div><span className="designation pl_5 pr_5">41hr . 00min</span><span className="designation pl_5 pr_5">$560</span></div></div>
                         </div>
                         <hr />
                         <div className="edit_box_header">
-                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik</span></div>
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/abhik.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik</span></div>
                             <div><span className="designation pl_5 pr_5">54hr . 15min</span><span className="designation pl_5 pr_5">$110</span></div></div>
                         </div>
                         <hr />
                         <div className="edit_box_header">
-                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik</span></div>
+                            <div className="edit_report_header mb_10"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rutvik.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik</span></div>
                             <div><span className="designation pl_5 pr_5">63hr . 35min</span><span className="designation pl_5 pr_5">$150</span></div></div>
                         </div>
                     </div>

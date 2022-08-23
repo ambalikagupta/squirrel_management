@@ -15,7 +15,7 @@ import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 import { Icon } from "../../Utilities/Icon"
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -60,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     drawerPaper: {
         position: "relative",
         whiteSpace: "nowrap",
+        '&::-webkit-scrollbar': {
+            display: "none"
+           },
         width: drawerWidth,
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
@@ -86,6 +89,9 @@ const useStyles = makeStyles((theme) => ({
         height: "100vh",
         overflow: "auto",
         margin: "20px 20px",
+        '&::-webkit-scrollbar': {
+           display: "none"
+          },
     },
     container: {
         paddingTop: theme.spacing(4),
