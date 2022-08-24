@@ -207,10 +207,7 @@ export default function Settings() {
                   />
                 </div>
                 <div className="setting_right_section ml_10">
-                  <p>WOLF SOFT Pvt. Ltd.<svg className="ml_5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
-                    <circle cx="15" cy="15" r="14.5" fill="#F6F6F6" stroke="#D6D6D6" />
-                    <path d="M18.303 9.4789C18.4477 9.32907 18.6208 9.20957 18.8122 9.12736C19.0036 9.04514 19.2094 9.00187 19.4177 9.00006C19.626 8.99825 19.8325 9.03794 20.0253 9.11681C20.2181 9.19569 20.3933 9.31217 20.5405 9.45945C20.6878 9.60674 20.8043 9.78189 20.8832 9.97467C20.9621 10.1675 21.0018 10.374 20.9999 10.5823C20.9981 10.7906 20.9549 10.9964 20.8726 11.1878C20.7904 11.3792 20.6709 11.5523 20.5211 11.697L19.8991 12.319L17.681 10.1009L18.303 9.4789ZM16.572 11.2099L10 17.7819V20H12.2181L18.7909 13.428L16.5712 11.2099H16.572Z" fill="#151417" />
-                  </svg></p>
+                  <p>WOLF SOFT Pvt. Ltd.</p>
                   <p>
                     Mobile app development, UIUX Design, Interaction design, IT
                     Project development, Web app development,

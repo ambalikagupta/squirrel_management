@@ -159,9 +159,9 @@ export default function Projectsetting() {
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
-                <div className="projectsetting_header">
+                <div className="projectsetting_header mt_40">
                     <h2>Project Settings</h2>
-                    <hr style={{ background: "#E1E3E9" }} className="mt_25 mb_25" />
+                    <hr style={{ background: "#E1E3E9" }} className="mt_25 mb_40" />
                 </div>
 
 
