@@ -1,6 +1,86 @@
-@media (max-width:991px) {
-    .menuButton {
-        position: fixed;
-        top: 25px;
+
+/*-------------------------------------------Mobile Media Query Start-----------------------------------------------------------------*/
+@media (min-width:320px) and (max-width:345px) {
+    /* .edit_box_header .designation {
+        padding-left: 50px;
+    }
+    .edit_report_header .flex-wrap {
+      flex-wrap: wrap;
+    } */
+    .ql-editor h2{
+        font-size: small;
+    }
+   
+}
+
+@media (max-width:424px) {
+    .edit_box_header .designation, .edit_box_header .profilename {
+        font-size: 12px;
+    }
+    .custom-select-activity select {
+        font-size: 12px;
+    }
+    .modal-content .pb_20.pt_20.pl_20.pr_20 {
+        padding: 10px;
+    }
+    .projectsetting_header h2 {
+        font-size: 20px;
+      }
+      .tabs {
+        padding: 7px 5px;
+       
     }
 }
+
+@media (max-width:767px) {
+    .loginpage_field {
+        margin: 30px auto
+    }
+    .cards_documents {
+        justify-content: flex-start;
+      }
+      .signup_divider h2 {
+        margin-top: 0px;
+    }
+    .signup_sidenav {
+
+        margin: 0px 20px;
+    }
+    .document_search{
+        margin-left: 24px;
+    } 
+    .document_header {
+        flex-wrap: wrap;
+    }
+    .company_details_locations h6{
+        margin-top: 15px;
+    }
+    /* .block-tabs-candidates .tabs{
+       
+    } */
+}
+  
+ 
+  /*-----------------------------------------------Mobile Media Query End---------------------------------------------------------------*/
+  /*-----------------------------------------------Desktop and Laptop Media Query Start-------------------------------------------------------------*/
+  
+  
+  @media (max-width: 991px) {
+   
+
+  }
+  
+
+  @media (max-width: 1200px) {
+    .skills_section_buttons{
+        flex-wrap: wrap;
+    }
+  }
+  
+
+  
+  @media (min-width:1400px) {
+   
+  }
+    /*------------------------------------------------Desktop and Laptop Media Query End-------------------------------------------------------------*/
+  

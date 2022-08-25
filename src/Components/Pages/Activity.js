@@ -137,7 +137,7 @@ export default function Activity() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
     };

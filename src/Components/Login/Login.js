@@ -39,7 +39,7 @@ function Login() {
 
               <p className="lead fw-normal mb-0 me-3">Or login with</p>
 
-              <div className='socialmedia_button d-flex flex-row align-items-center mt_10'>
+              <div className='socialmedia_button d-flex flex-wrap align-items-center mt_10'>
                 <button className='pt_10 pb_10 pr_10 pl_10'>
                   <img className='mr_10' src={Icon.Google}></img>Google
                 </button>
@@ -57,8 +57,8 @@ function Login() {
           </div>
         </MDBCol>
 
-        <MDBCol className=' d-flex align-items-center' col='10' md='6' style={{ background: "#3653F6" }}>
-          <img src={require("../../assets/image/png/dashboard.png").default} class="pl_50 img-fluid" alt="Sample image" />
+        <MDBCol className=' d-flex align-items-center project_expenses' col='10' md='6' style={{ background: "#3653F6" }}>
+          <img src={require("../../assets/image/png/dashboard.png").default} class="img-fluid" alt="Sample image" />
         </MDBCol>
 
       </MDBRow>

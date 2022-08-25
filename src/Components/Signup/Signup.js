@@ -17,7 +17,7 @@ function SignUp() {
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
                         <p className='new_account'>Create new Account</p>
-                        <hr style={{border: "1px solid rgba(255, 255, 255, 0.2)"}} className='mt_20 mb_20' />
+                        <hr style={{border: "1px solid rgba(255, 255, 255, 0.2)"}} className='mt_40 mb_40' />
                         <div className='signup_details'>
                             <h6 className='pt_5 pb_5'>Personal Deatils</h6>
                             <p>Yours Company Name</p>
@@ -35,7 +35,7 @@ function SignUp() {
                             <p className="lead fw-normal mb-0 me-3">Signup with social media.
                             </p>
 
-                            <div className='socialmedia_button d-flex flex-row align-items-center mt_10'>
+                            <div className='socialmedia_button d-flex flex-wrap align-items-center mt_10'>
                                 <button className='pt_10 pb_10 pr_10 pl_10'>
                                     <img className='mr_10' src={Icon.Google}></img>Google
                                 </button>

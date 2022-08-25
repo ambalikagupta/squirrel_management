@@ -17,7 +17,7 @@ export default function EditDocument() {
             <div className="document_header">
                 <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt=""/>
                     <h2>Enter document title here <br /> <span className="text-muted">Creating new document</span></h2></div>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="d-flex flex-wrap justify-content-center align-items-center">
                         <div className="document_button mt_10 mb_10">
                             <div>
                                 <button className="button1"><svg className="mr_10" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">

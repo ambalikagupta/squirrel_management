@@ -211,7 +211,7 @@ export default function NFTmarketplace() {
                         </div>
 
                         <div className="edit_report_header mt_15">
-                            <div className="">
+                            <div className="flex-wrap">
                                 <span className="pl_5 pr_5"><img src={require("../../assets/image/png/pic2.png").default} alt="" /></span>
                                 <span className="profilename pl_5 pr_5">Rutvik Jolapara  </span>
                                 <span className="designation pl_5 pr_5">( Project Manager )</span>

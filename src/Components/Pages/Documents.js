@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function Documents() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -150,7 +150,7 @@ export default function Documents() {
                 <div className="documents_header">
                 
                     <h2>Documents</h2>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="d-flex flex-wrap justify-content-center align-items-center">
                         <div class="custom-select-documents" style={{ width: "148px" }}>
                             <select>
                                 <option value="0">Owned by anyone</option>
@@ -160,12 +160,13 @@ export default function Documents() {
                             </select>
                         </div>
                         <div className="search_document">
-                            <form class="d-flex justify-content-between align-items-center mr_15">
+                            <form class="d-flex justify-content-between align-items-center document_search mr_15">
                                 <input
-                                    class="form-control ml_5 pl_35"
+                                    class="form-control input_field ml_5 pl_35"
                                     type="search"
                                     placeholder="Search Document"
                                     aria-label="Search"
+                                    style={{border:"none"}}
                                 />
                                  <img src={require("../../assets/image/png/search.png").default} className="payout_search"></img>
                             </form>

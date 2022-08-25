@@ -806,6 +806,13 @@
   line-height: 17px;
   color: #242529;
 }
+.project_expenses {
+  position: relative;
+}
+.project_expenses img {
+  position: absolute;
+  right: 0;
+}
 
 /* -------------------------------------------------------/* Login css end *------------------------------------- */
 
@@ -882,7 +889,7 @@
   line-height: 32px;
   letter-spacing: 0.02em;
   color: #151417;
-  margin-top: 69px;
+  margin-top: 80px;
 }
 
 .signup_divider p {
@@ -1108,6 +1115,7 @@
 .main-header {
   position: unset !important;
   width: 100%;
+  padding: 0 !important;
 }
 
 .main-header .button1 {
@@ -1126,7 +1134,7 @@
 
 .navbar-toggler {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 15px;
 }
 
@@ -1330,6 +1338,7 @@
 
 .documents_header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
@@ -1400,9 +1409,12 @@
 
 /* Style the search box inside the navigation bar */
 .search_document {
+  
   width: 200px;
 }
-
+.input_field{
+  border: none;
+}
 .search_document input::placeholder {
   font-family: "SF Pro Display";
   font-style: normal;
@@ -1829,6 +1841,7 @@ input:checked + .slider:before {
 
 .topfield {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -1841,6 +1854,7 @@ input:checked + .slider:before {
 
 .form_group .datepickerrow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 10px;
   align-items: center;
@@ -2117,6 +2131,7 @@ input:checked + .slider:before {
 /* organization css */
 .organization_div {
   display: flex;
+  
   justify-content: flex-start;
   align-items: center;
   gap: 15px;

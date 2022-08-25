@@ -24,7 +24,7 @@ export const secondaryListItems = (
     <div className="sidenav">
         <div className="create_project pt_20 pb_10 pl_15 pr_10">
             <p>Projects</p>
-            <a href="#">Craete new Project +</a>
+            <a href="#">Create new Project +</a>
         </div>
 
         <div className="sidenav_bottom_div">
