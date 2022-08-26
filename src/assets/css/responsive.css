@@ -43,7 +43,6 @@
         margin-top: 0px;
     }
     .signup_sidenav {
-
         margin: 0px 20px;
     }
     .document_search{
@@ -55,9 +54,23 @@
     .company_details_locations h6{
         margin-top: 15px;
     }
-    /* .block-tabs-candidates .tabs{
-       
-    } */
+    .project_expenses img {
+        top: 20px;
+      }
+      .MuiDrawer-root {
+        position: absolute;
+        left: 0;
+      }
+      .MuiDrawer-paper {
+        height: 107vh !important;
+      }
+      .sidenav a {
+        padding: 10px 15px;
+      }
+      .makeStyles-content-12 {
+        margin-left: 75px !important;
+      }
+     
 }
   
  
@@ -66,7 +79,32 @@
   
   
   @media (max-width: 991px) {
-   
+    .navbar-toggler {
+        font-size: 1.10rem !important;
+        border: none !important;
+    }
+    .main-header .button1 {
+        display: none;
+      }
+      .main-header .mob-button {
+        display: block;
+        background: #000000;
+        border: 1px solid #242529;
+        border-radius: 100px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #f6f6f6;
+        padding: 8px 20px;
+        border: none;
+      }
+      .makeStyles-menuButton-6 {
+        position: absolute;
+        top: 22px;
+        left: 22px;
+      }
 
   }
   
