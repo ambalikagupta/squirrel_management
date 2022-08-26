@@ -137,7 +137,7 @@ export default function Activity() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -180,7 +180,7 @@ export default function Activity() {
                 <div className={classes.appBarSpacer} />
                 <div className="activity_header">
                     <h2>Activity</h2>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="activity_header_select">
                         <div className="d-flex justify-content-center align-items-center">
                             <svg className="mr_15 ml_5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 2.75C1 2.28587 1.18437 1.84075 1.51256 1.51256C1.84075 1.18437 2.28587 1 2.75 1H4.5C4.96413 1 5.40925 1.18437 5.73744 1.51256C6.06563 1.84075 6.25 2.28587 6.25 2.75V4.5C6.25 4.96413 6.06563 5.40925 5.73744 5.73744C5.40925 6.06563 4.96413 6.25 4.5 6.25H2.75C2.28587 6.25 1.84075 6.06563 1.51256 5.73744C1.18437 5.40925 1 4.96413 1 4.5V2.75ZM9.75 2.75C9.75 2.28587 9.93437 1.84075 10.2626 1.51256C10.5908 1.18437 11.0359 1 11.5 1H13.25C13.7141 1 14.1592 1.18437 14.4874 1.51256C14.8156 1.84075 15 2.28587 15 2.75V4.5C15 4.96413 14.8156 5.40925 14.4874 5.73744C14.1592 6.06563 13.7141 6.25 13.25 6.25H11.5C11.0359 6.25 10.5908 6.06563 10.2626 5.73744C9.93437 5.40925 9.75 4.96413 9.75 4.5V2.75ZM1 11.5C1 11.0359 1.18437 10.5908 1.51256 10.2626C1.84075 9.93437 2.28587 9.75 2.75 9.75H4.5C4.96413 9.75 5.40925 9.93437 5.73744 10.2626C6.06563 10.5908 6.25 11.0359 6.25 11.5V13.25C6.25 13.7141 6.06563 14.1592 5.73744 14.4874C5.40925 14.8156 4.96413 15 4.5 15H2.75C2.28587 15 1.84075 14.8156 1.51256 14.4874C1.18437 14.1592 1 13.7141 1 13.25V11.5ZM9.75 11.5C9.75 11.0359 9.93437 10.5908 10.2626 10.2626C10.5908 9.93437 11.0359 9.75 11.5 9.75H13.25C13.7141 9.75 14.1592 9.93437 14.4874 10.2626C14.8156 10.5908 15 11.0359 15 11.5V13.25C15 13.7141 14.8156 14.1592 14.4874 14.4874C14.1592 14.8156 13.7141 15 13.25 15H11.5C11.0359 15 10.5908 14.8156 10.2626 14.4874C9.93437 14.1592 9.75 13.7141 9.75 13.25V11.5Z" stroke="#151417" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
@@ -221,8 +221,8 @@ export default function Activity() {
                 <div>
                     <Accordion>
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                                <Typography  className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -232,8 +232,8 @@ export default function Activity() {
                         </div>
 
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
+                                <Typography  className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -258,8 +258,8 @@ export default function Activity() {
                 <div>
                     <Accordion>
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography  className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:45pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                                <Typography className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -269,8 +269,8 @@ export default function Activity() {
                         </div>
 
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span><span className="designation pl_5 pr_5">Sr. UIUX Designer</span></Typography>
+                                <Typography className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -280,8 +280,8 @@ export default function Activity() {
                         </div>
 
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/aprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik Patel</span><span className="designation pl_5 pr_5">Wireframe designer</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/aprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik Patel</span><span className="designation pl_5 pr_5">Wireframe designer</span></Typography>
+                                <Typography className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -292,8 +292,8 @@ export default function Activity() {
 
 
                         <div className="accor">
-                            <div className="activity_accordion_header"><Typography><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik Jolapara</span><span className="designation pl_5 pr_5">Project Manager</span></Typography>
-                                <Typography><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
+                            <div className="activity_accordion_header"><Typography className="actvity_header_titleleft"><span className="time pl_15 pr_15">6:32pm</span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rprofile.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik Jolapara</span><span className="designation pl_5 pr_5">Project Manager</span></Typography>
+                                <Typography className="actvity_header_titleright"><span className="mr_10"> <Button onClick={handleShow} className="edit_button" startIcon={<EditIcon />}>
                                     Edit
                                 </Button></span><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">7hrs 40 mins</span></Typography></div>
                             <div className="body mt_15">- Changes in APIs as per developer comment == DONE <br />
@@ -311,8 +311,8 @@ export default function Activity() {
                 </Modal.Header>
                 <Modal.Body>
                     <div className="edit_box_header">
-                        <div className="edit_report_header mb_10"><Typography><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
-                            <Typography><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">Last edited on 14 may by <b>Rushabh patel</b> 2022 at 6:15 Pm</span></Typography></div>
+                        <div className="edit_report_header mb_10"><Typography className="actvity_header_titleleft"><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span><span className="designation pl_5 pr_5">CEO & Sr. UIUX Designer</span></Typography>
+                            <Typography className="actvity_header_titleright"><span className="pl_5 pr_5"><img src={require("../../assets/image/png/clock.png").default} alt="" /></span><span className="designation pl_5 pr_5">Last edited on 14 may by <b>Rushabh patel</b> 2022 at 6:15 Pm</span></Typography></div>
                     </div>
                     <TextEditor />
                 </Modal.Body>

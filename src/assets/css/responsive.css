@@ -10,6 +10,9 @@
     .ql-editor h2{
         font-size: small;
     }
+    .ql-toolbar.ql-snow {
+        padding: 0px;
+    }
    
 }
 
@@ -30,6 +33,27 @@
         padding: 7px 5px;
        
     }
+    .accor {
+        padding: 5px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .edit_report_header {
+        position: relative;
+    }
+    .edit_report_header .profilename {
+        position: absolute;
+        top: -5px;
+
+    }
+    .edit_report_header .designation {
+        position: absolute;
+        top: 15px;
+    }
+}
+
+@media (max-width:600px) {
+   
 }
 
 @media (max-width:767px) {
@@ -70,9 +94,28 @@
       .makeStyles-content-12 {
         margin-left: 75px !important;
       }
-     
+      .accor .body {
+        padding: 0px 11px;
+    }
+    .actvity_header_titleleft {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        position: relative;
+    }
+    .actvity_header_titleleft .designation {
+        position: absolute;
+        top: 28px;
+        left: 120px;
+        font-size: 11px;
+        width: 100%
+    }
+    .activity_header_select {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 10px;
+    }
 }
-  
+   
  
   /*-----------------------------------------------Mobile Media Query End---------------------------------------------------------------*/
   /*-----------------------------------------------Desktop and Laptop Media Query Start-------------------------------------------------------------*/
