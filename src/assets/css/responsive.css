@@ -148,6 +148,9 @@
         top: 22px;
         left: 22px;
       }
+      .members_header h2 {
+        margin-left: 40px;
+      }
 
   }
   
@@ -155,6 +158,19 @@
   @media (max-width: 1200px) {
     .skills_section_buttons{
         flex-wrap: wrap;
+    }
+    .members_div {
+        display: block !important;
+    }
+    .members_div .col-md-9 {
+        max-width: 100%;
+    }
+    .members_div .col-md-3 {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .datatable_table {
+        width: 832px !important;
     }
   }
   
