@@ -12,7 +12,7 @@ export default function EditDocument() {
     const [show, setShow] = useState('')
 
     return (
-        <div>
+        <div className="edit_document_main">
             <main>
             <div className="document_header">
                 <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt=""/>

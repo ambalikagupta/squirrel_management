@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Projectsetting() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -121,7 +121,7 @@ export default function Projectsetting() {
     return (
         <div className={classes.root}>
             <AppBar className={clsx(classes.appBar, open && classes.appBarShift)}>
-                <Toolbar className={classes.toolbar}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
                     <img
                         src={Icon.Closearrow}
                         alt=""
@@ -141,7 +141,7 @@ export default function Projectsetting() {
                 }}
                 open={open}
             >
-                <div className={classes.toolbarIcon}>
+                <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
                     <h1 className="logo">
                         <a href="/">SQUIRRELL</a>
                     </h1>
@@ -152,16 +152,14 @@ export default function Projectsetting() {
                         />
                     </IconButton>
                 </div>
-                <Divider />
                 <List>{mainListItems}</List>
                 <Divider />
                 <List>{secondaryListItems}</List>
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
-                <div className="projectsetting_header mt_40">
+                <div className="projectsetting_header">
                     <h2>Project Settings</h2>
-                    <hr style={{ background: "#E1E3E9" }} className="mt_25 mb_40" />
                 </div>
 
 

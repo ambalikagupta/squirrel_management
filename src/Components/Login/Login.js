@@ -21,12 +21,12 @@ function Login() {
 
           <div className="loginpage_field">
             <div className="divider">
-              <h2 className="">Login with <span className='font-weight-bold'>SQUIRRELL</span></h2>
+              <h2 className="">Login with <span className='font-weight-bolder'>SQUIRRELL</span></h2>
               <p className="">Enter your details below</p>
             </div>
 
-            <MDBInput className='logininput_field' wrapperClass='mt_40 mb-2' placeholder='Enter your email' id='formControlLg' type='email' size="lg" />
-            <MDBInput wrapperClass='mb-2' className='logininput_field' placeholder='Passowrd' id='formControlLg' type='password' size="lg" />
+            <MDBInput className='logininput_field' wrapperClass='mt_40 mb-2' placeholder='Enter your email' id='formControlLg' type='email' />
+            <MDBInput wrapperClass='mb-2' className='logininput_field' placeholder='Passowrd' id='formControlLg' type='password'  />
 
             <div className="forgot_password_link d-flex justify-content-between align-items-center mb_45">
               <a href="!#">Forgot password?</a>

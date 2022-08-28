@@ -737,15 +737,14 @@
 
 .loginpage_field {
   max-width: 360px;
-  margin: 80px auto;
+  margin: 115px auto;
   width: 100%;
   padding: 5px 10px;
 }
 
 .logininput_field {
   background: none !important;
-  border: 1px solid #d6d6d6;
-  border-radius: 3px;
+  height: 50px !important;
 }
 
 .logininput_field::placeholder {
@@ -753,7 +752,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
   color: #7f8197;
 }
 
@@ -789,6 +787,7 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #151417;
+  padding-bottom: 10px
 }
 
 .socialmedia_button {
@@ -796,7 +795,7 @@
 }
 
 .socialmedia_button button {
-  border: 1px solid #d6d6d6;
+  border: 1px solid #d6d6d654;
   border-radius: 3px;
   background: none !important;
   font-family: "SF Pro Display";
@@ -806,14 +805,16 @@
   line-height: 17px;
   color: #242529;
 }
+
 .project_expenses {
   position: relative;
 }
+
 .project_expenses img {
   position: absolute;
   right: 0;
   padding-left: 50px;
-  top: 100px;
+  top: 180px;
 }
 
 /* -------------------------------------------------------/* Login css end *------------------------------------- */
@@ -905,8 +906,7 @@
 
 .signupinput_field {
   background: none !important;
-  border: 1px solid #d6d6d6;
-  border-radius: 3px;
+  height: 50px !important;
 }
 
 .signupinput_field::placeholder {
@@ -984,6 +984,7 @@
   background: #ffffff;
 }
 
+
 .logo a {
   font-family: "SF Pro Display";
   font-style: normal;
@@ -1008,15 +1009,17 @@
   display: none !important;
 }
 
+.sidenav {
+  margin-top: 20px;
+}
+
 .sidenav a {
-  padding: 8px 8px 8px 20px;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  color: #818181;
-  font-family: "SF Pro Display";
+  padding: 5px 8px 8px 24px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
+  line-height: 15px;
   color: #242529;
   display: block;
 }
@@ -1028,8 +1031,9 @@
 }
 
 .create_project p {
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #242529;
@@ -1037,9 +1041,10 @@
 }
 
 .create_project a {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
   text-align: left;
   color: #3653f6;
   padding-left: 5px;
@@ -1048,43 +1053,44 @@
 .sidenav_bottom_div a {
   display: flex;
   align-items: center;
-  padding: 8px 8px 8px 20px;
+  padding: 5px 8px 8px 20px;
 }
 
 .sidenav_bottom_div .letter_circle1 {
   background: #e3afff;
   border-radius: 50%;
-  padding: 6px 6px;
+  padding: 8px 10px;
 }
 
 .sidenav_bottom_div .letter_circle2 {
   background: #fff1a6;
   border-radius: 50%;
-  padding: 6px 6px;
+  padding: 8px 10px;
 }
 
 .sidenav_bottom_div .letter_circle3 {
   background: #ffa8d0;
   border-radius: 50%;
-  padding: 6px 6px;
+  padding: 8px 10px;
 }
 
 .sidenav_bottom_div .letter_circle4 {
   background: #95b7e7;
   border-radius: 50%;
-  padding: 6px 6px;
+  padding: 8px 10px;
 }
 
 .sidenav_bottom_div .letter_circle5 {
   background: #ff8584;
   border-radius: 50%;
-  padding: 6px 8px;
+  padding: 8px 10px;
 }
 
 .sidenav_bottom_div span {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 15px;
   color: #242529;
   text-align: left;
@@ -1128,11 +1134,12 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 17px;
   color: #f6f6f6;
   padding: 8px 20px;
   border: none;
 }
+
 .mob-button {
   display: none;
 }
@@ -1155,12 +1162,13 @@
 }
 
 .navbar_navigation a {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   color: #242529 !important;
 }
 
@@ -1180,6 +1188,7 @@
   position: absolute !important;
   right: 0;
   top: 60px;
+  max-width: 400px !important;
 }
 
 .madhouse_top_first,
@@ -1192,7 +1201,7 @@
   background: #fff1a6;
   border-radius: 50%;
   padding: 6px 8px;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1204,7 +1213,7 @@
 }
 
 .madhouse_top_first h6 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1213,7 +1222,7 @@
 }
 
 .madhouse_top_first p {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1221,8 +1230,8 @@
   color: #242529;
 }
 
-.madhouse_top_sec h6 {
-  font-family: "SF Pro Display";
+.madhouse_top_sec h5 {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1232,7 +1241,7 @@
 }
 
 .madhouse_top_sec small {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1242,7 +1251,7 @@
 
 .addicon_button {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -1253,9 +1262,9 @@
   padding: 14px 0px;
   text-transform: capitalize;
   color: #151417;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   border: none;
@@ -1282,7 +1291,7 @@
 }
 
 .madhouse_bootom_section p {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -1299,7 +1308,7 @@
 
 .cards_documents {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -1323,19 +1332,19 @@
 }
 
 .documents_text .scope_work {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px !important;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
   color: #242529;
 }
 
 .documents_text .pt_5 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 15px;
   color: #737376;
   margin-bottom: 0;
@@ -1347,10 +1356,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  border-bottom: 1px solid #E1E3E9;
 }
 
 .documents_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1359,15 +1369,26 @@
   align-items: center;
   letter-spacing: -0.03em;
   color: #151417;
+  padding-bottom: 10px;
 }
 
 /* Style the search box inside the navigation bar */
 .search_document {
-  width: 200px;
+  width: 180px;
+}
+
+.document_search {
+  position: relative;
+}
+
+.document_search img {
+  position: absolute;
+  top: 16px;
+  right: 30px;
 }
 
 .search_document input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1378,10 +1399,10 @@
 }
 
 .custom-select-documents select {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
   display: flex;
   align-items: center;
@@ -1400,10 +1421,11 @@
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  border-bottom: 1px solid #E1E3E9;
 }
 
 .activity_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1412,7 +1434,9 @@
   align-items: center;
   letter-spacing: -0.03em;
   color: #151417;
+  padding-bottom: 10px;
 }
+
 .activity_header_select {
   display: flex;
   justify-content: center;
@@ -1420,15 +1444,12 @@
 }
 
 /* Style the search box inside the navigation bar */
-.search_document {
-  
-  width: 200px;
-}
-.input_field{
+.input_field {
   border: none;
 }
+
 .search_document input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1439,10 +1460,10 @@
 }
 
 .custom-select-activity select {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
   display: flex;
   align-items: center;
@@ -1461,7 +1482,7 @@
 .activity_button .button1 {
   background: #3653f6;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1475,7 +1496,7 @@
   background: #f1f1f1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1486,13 +1507,12 @@
 
 .activity_accordion_header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .accor {
-  margin: 10px;
+  margin: 18px 10px;
   border: 1px solid #ddd;
   transition: 0.4s;
   padding: 16px 16px;
@@ -1501,30 +1521,30 @@
 
 .accor .time,
 .edit_box_header .time {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 15px;
   color: #242529;
 }
 
 .accor .profilename,
 .edit_box_header .profilename {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 16px;
-  color: #242529;
+  color: #000000;
 }
 
 .accor .designation,
 .edit_box_header .designation {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 15px;
   color: #737376;
 }
@@ -1535,7 +1555,7 @@
   padding: 6px 15px;
   text-transform: capitalize;
   color: #151417;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1547,7 +1567,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 150ms ease-in-out;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1556,7 +1576,7 @@
   padding: 0px 90px;
 }
 
-.accor.active > .body {
+.accor.active>.body {
   max-height: 600px;
   padding-bottom: 15px;
 }
@@ -1570,12 +1590,11 @@
 }
 
 .modal_title {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700 !important;
   font-size: 16px !important;
   line-height: 19px;
-  letter-spacing: 0.03em;
   color: #000000;
 }
 
@@ -1586,7 +1605,7 @@
 }
 
 .modal_footer .hours_worked {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1600,7 +1619,7 @@
   background: #f6f6f6;
   border: 1px solid #e2e2e2;
   border-radius: 6px;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1627,24 +1646,27 @@
 /* -------------------------------------------------------/* Edit Document css Start *------------------------------------- */
 
 .document_header img {
-  margin-top: 0;
+  margin-top: 0px;
   margin-left: 0px;
   margin-right: 20px;
 }
+
 .text-muted2 {
   color: #151417;
   font-weight: 500;
   font-size: 12px;
 }
+
 .document_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 0px 20px;
+  flex-wrap: wrap;
 }
 
 .document_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -1653,7 +1675,7 @@
 }
 
 .document_header .text-muted {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1702,10 +1724,10 @@
 }
 
 .modal_body_toggle .link_text {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 16px;
   color: #242529;
   margin-bottom: 0;
@@ -1748,15 +1770,15 @@
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #08bd7c;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #08bd7c;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -1774,9 +1796,9 @@ input:checked + .slider:before {
 .modal_body_toggle .download_pdf {
   font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   text-align: right;
   color: #3653f6;
   text-decoration: none;
@@ -1787,8 +1809,8 @@ input:checked + .slider:before {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.05em;
   color: #737376;
 }
@@ -1797,17 +1819,17 @@ input:checked + .slider:before {
   background: #19b858;
   border-radius: 6px;
   width: 100%;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   color: #ffffff;
   padding: 13px 0px;
 }
 
 .profilename_client {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1818,18 +1840,23 @@ input:checked + .slider:before {
 /* -------------------------------------------------------/* Edit Document css end *------------------------------------- */
 
 /* -------------------------------------------------------/* Project Settings css Start *------------------------------------- */
+.projectsetting_header {
+  border-bottom: 1px solid #E1E3E9;
+}
+
 .projectsetting_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #151417;
+  letter-spacing: -0.03em;
+  padding-bottom: 10px;
 }
 
 .form_group {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-top: 20px;
 }
 
 .form_group input {
@@ -1841,12 +1868,13 @@ input:checked + .slider:before {
   font-weight: 400;
   font-size: 14px;
   color: #151417;
+  min-height: 50px;
 }
 
 .form_group label {
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 12px;
   line-height: 14px;
   color: #000000;
 }
@@ -1873,7 +1901,7 @@ input:checked + .slider:before {
 }
 
 .form_group .btnsave {
-  max-width: 715px;
+  max-width: 780px;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -1885,13 +1913,14 @@ input:checked + .slider:before {
   border: none;
   background: #f6f6f6;
   border-radius: 4px;
-  padding: 10px 50px;
-  font-family: "SF Pro Display";
+  padding: 12px 70px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   color: #737376;
+  text-transform: capitalize;
 }
 
 .form_group input::placeholder {
@@ -1908,6 +1937,11 @@ input:checked + .slider:before {
 .members_div {
   margin: 0 !important;
   padding: 0 !important;
+  margin-top: 28px !important;
+}
+
+.members_div .col-md-9 {
+  margin-top: 20px !important;
 }
 
 .members_header {
@@ -1918,13 +1952,25 @@ input:checked + .slider:before {
 }
 
 .members_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 21px;
   color: #242529;
   margin-bottom: 0;
+}
+
+.header_select_selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.header_select_selection-mob {
+  display: none;
 }
 
 .members_form_group {
@@ -1934,7 +1980,7 @@ input:checked + .slider:before {
 }
 
 .member_search {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e2e2e2;
@@ -1957,7 +2003,7 @@ input:checked + .slider:before {
 }
 
 .form-inline input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1970,7 +2016,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .invite_member {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   width: 225px;
   font-size: 13px;
   line-height: 16px;
@@ -1988,7 +2034,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .select_member {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   width: 101px;
   font-weight: 600;
   font-size: 13px;
@@ -1999,7 +2045,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .btn_invite {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   width: 101px;
   border: none;
   font-weight: 500;
@@ -2019,7 +2065,7 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:first-child {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -2028,7 +2074,7 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:last-child {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   color: #8b8b8b;
   font-weight: 500;
   font-size: 16px;
@@ -2043,7 +2089,7 @@ input:checked + .slider:before {
 }
 
 .member_table_head {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -2053,11 +2099,12 @@ input:checked + .slider:before {
 
 .member_table_head_text,
 .member_table_body_text {
-  padding: 20px 15px !important;
+  padding: 16px 15px !important;
+  vertical-align: middle !important;
 }
 
 .member_table_body_row {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2073,11 +2120,13 @@ input:checked + .slider:before {
 }
 
 .members_salary_incentive {
-  padding: 0px 10px;
+  padding: 20px 10px;
+  border-left: 1px solid #E1E3E9;
+  ;
 }
 
 .members_salary_incentive h6 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -2094,7 +2143,7 @@ input:checked + .slider:before {
 }
 
 .salary-description p {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2118,10 +2167,10 @@ input:checked + .slider:before {
   outline: none;
   background: white;
   border: none;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: #242529;
@@ -2147,7 +2196,7 @@ input:checked + .slider:before {
   align-items: center;
   gap: 15px;
   padding: 25px 0px;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   border-bottom: 1px solid #e1e3e9;
 }
 
@@ -2187,7 +2236,7 @@ input:checked + .slider:before {
 }
 
 .organization_tab_div {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   margin: 0 !important;
 }
 
@@ -2246,7 +2295,7 @@ input:checked + .slider:before {
 }
 
 .specialities_button button {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -2264,7 +2313,7 @@ input:checked + .slider:before {
 }
 
 .company_details_locations h6 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -2279,7 +2328,7 @@ input:checked + .slider:before {
 }
 
 .address_description {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2287,7 +2336,7 @@ input:checked + .slider:before {
 }
 
 .small_addons_description p {
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2296,12 +2345,16 @@ input:checked + .slider:before {
   margin-bottom: 10px;
 }
 
-/* -------------------------------------------------------/* Settings css end *------------------------------------- */ /* -------------------------------------------------------/* Candidates css start *------------------------------------- */
+/* -------------------------------------------------------/* Settings css end *------------------------------------- */
+/* -------------------------------------------------------/* Candidates css start *------------------------------------- */
 /* -------------------------------------------------------/* Cnadidate css start *------------------------------------- */
 
 .candidate_navigation {
   display: flex;
-  height: 45px;
+  min-height: 45px;
+}
+.block-tabs-candidates-mob {
+  display: none;
 }
 
 .block-tabs-candidates {
@@ -2310,12 +2363,56 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+.candidate_header_text_item {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #d6d6d654;
+  padding-top: 30px;
+}
+
+.candidate_header_text_item p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #242529;
+}
+
+.candidate_header_text_item .span1 ,.candidate_header_text_item, .span2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.custom-button-clear button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #242529;
+  background: none;
+  border: 1px solid #D6D6D6;
+  border-radius: 2px;
+  padding: 5px 15px;
+}
+
+
 .candidate_body {
-  background-color: #d6d6d6d6;
-  padding: 50px 0px;
+  display: flex;
+  gap: 20px;
+  background-color: #d6d6d654;
+  padding: 20px 0px;
   margin: 0 !important;
-  font-family: "SF Pro Display";
+  font-family: 'Inter', sans-serif;
   /* column-gap: 13px; */
+  justify-content: space-between;
 }
 
 .candidate_body .first,
@@ -2324,6 +2421,11 @@ input:checked + .slider:before {
   border: 0.5px solid #deddda;
   border-radius: 5px;
   padding: 10px;
+  max-width: 20% !important;
+}
+
+.candidate_body .sec {
+  max-width: 100% !important;
 }
 
 .candidate_body .sec .sec-first,
@@ -2340,11 +2442,22 @@ input:checked + .slider:before {
   background: #ffffff;
   border: 0.5px solid #deddda;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px 15px;
 }
+
 /* .candidate_body .first, .candidate_body .third {
   width: 24%;
 } */
+
+/* third */
+
+
+.candidate_body .third .image_2 {
+  max-width: 320px;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 /* middle */
 
@@ -2354,6 +2467,7 @@ input:checked + .slider:before {
   line-height: 150%;
   letter-spacing: -0.01em;
   color: #737376;
+  margin-top: 5px;
 }
 
 .sec .main_heading_bold {
@@ -2388,7 +2502,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .left_div_buttons .btn_boosted {
@@ -2440,7 +2554,8 @@ input:checked + .slider:before {
 
 .skills_section_buttons {
   display: flex;
-  gap: 10px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .skills_section_buttons span {
@@ -2463,6 +2578,7 @@ input:checked + .slider:before {
   border: none;
   padding: 5px 15px;
 }
+
 .skills_section_buttons_two {
   display: flex;
   gap: 10px;
@@ -2479,6 +2595,7 @@ input:checked + .slider:before {
   line-height: 150%;
   color: #242529;
 }
+
 .skills_section_buttons_two .btn2 {
   border: 1px solid #151417;
   border-radius: 100px;
@@ -2518,8 +2635,18 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 15px 6px 10px;
 }
+
+.skills_input_field::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 15px;
+  color: #737376;
+}
+
 .skills_div p:first-child {
   font-weight: 600;
   font-size: 14px;
@@ -2541,6 +2668,8 @@ input:checked + .slider:before {
   gap: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .laravel .first_div_buttons {
@@ -2604,6 +2733,7 @@ input:checked + .slider:before {
   width: 100%;
   gap: 15px;
 }
+
 .april_designer {
   border: 1px solid #e1e3e9;
   padding-top: 10px;
@@ -2611,6 +2741,7 @@ input:checked + .slider:before {
   padding-left: 10px;
   width: 68%;
 }
+
 .documents_text .scope_work_profile {
   font-family: "Inter";
   font-style: normal;
@@ -2619,8 +2750,9 @@ input:checked + .slider:before {
   line-height: 19px;
   color: #737376;
 }
+
 .profile_header h2 {
-  font-family: "SF Pro Display";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;

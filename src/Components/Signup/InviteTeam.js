@@ -36,9 +36,9 @@ function SignUp() {
                             <p className="">Enter your team member’s email, we will send them an invite to join Squirrel.</p>
                         </div>
 
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='e.g.  person@company.com' id='formControlLg' type='email' size="lg" />
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='e.g.  person@company.com' id='formControlLg' type='email' size="lg" />
-                        <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='e.g.  person@company.com' id='formControlLg' type='email' size="lg" />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='e.g.  person@company.com' id='formControlLg' type='email' />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='e.g.  person@company.com' id='formControlLg' type='email' />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='e.g.  person@company.com' id='formControlLg' type='email' />
 
                         <div className="addmore_team_link d-flex justify-content-between align-items-center mb_30">
                             <a href="!#">+ Add more team member</a>

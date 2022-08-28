@@ -119,7 +119,7 @@ export default function Documents() {
             <AppBar
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
-                <Toolbar className={classes.toolbar}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
                     <img src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
@@ -134,13 +134,12 @@ export default function Documents() {
                 }}
                 open={open}
             >
-                <div className={classes.toolbarIcon}>
+                <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
                     <h1 className="logo"><a href="/">SQUIRRELL</a></h1>
                     <IconButton onClick={handleDrawerClose}>
                         <img src={Icon.Openarrow} alt="" />
                     </IconButton>
                 </div>
-                <Divider />
                 <List>{mainListItems}</List>
                 <Divider />
                 <List>{secondaryListItems}</List>
@@ -176,7 +175,7 @@ export default function Documents() {
                 </div>
                
                 <div class="cards_documents">
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents1.png").default} alt="" />
@@ -186,47 +185,47 @@ export default function Documents() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents2.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Contract</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents4.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents5.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents1.png").default} alt="" />
@@ -236,42 +235,42 @@ export default function Documents() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents2.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Contract</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb_10">
+                    <div class="col-md-3">
                         <div class="card">
                             <div class="card-block">
                                 <img src={require("../../assets/image/png/documents3.png").default} alt="" />
                                 <div className="documents_text">
-                                    <h6><span className="scope_work">Scope of work V1.</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
+                                    <h6><span className="scope_work">Meeting  12 oct. 2021</span><p className="pt_5">14 Oct 2021</p></h6><span >&#10247;</span>
                                 </div>
                             </div>
                         </div>

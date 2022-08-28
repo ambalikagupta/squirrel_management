@@ -150,7 +150,7 @@ export default function Activity() {
             <AppBar
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
-                <Toolbar className={classes.toolbar}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
                     <img  src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
@@ -165,13 +165,12 @@ export default function Activity() {
                 }}
                 open={open}
             >
-                <div className={classes.toolbarIcon}>
+                <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
                     <h1 className="logo"><a href="/">SQUIRRELL</a></h1>
                     <IconButton onClick={handleDrawerClose}>
                         <img src={Icon.Openarrow} alt="" />
                     </IconButton>
                 </div>
-                <Divider />
                 <List>{mainListItems}</List>
                 <Divider />
                 <List>{secondaryListItems}</List>

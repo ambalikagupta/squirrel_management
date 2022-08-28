@@ -10,12 +10,50 @@ export default function Candidate() {
   };
 
   return (
-    <div>
+    <div className="candidate_main_div">
       <div className="candidate_navigation">
         <small className="logo mt_10 ml_10">
           <a href="/">SQUIRRELL</a>
         </small>
         <div className="block-tabs-candidates">
+          <button
+            className={toggleState === 1 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(1)}
+          >
+            Candidates
+          </button>
+          <button
+            className={toggleState === 2 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(2)}
+          >
+            Unlocked
+          </button>
+          <button
+            className={toggleState === 3 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(3)}
+          >
+            Analytics
+          </button>
+          <button
+            className={toggleState === 4 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(4)}
+          >
+            Proposals
+          </button>
+          <button
+            className={toggleState === 5 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(5)}
+          >
+            Contract
+          </button>
+          <button
+            className={toggleState === 6 ? "tabs tabs-active" : "tabs"}
+            onClick={() => toggleTab(6)}
+          >
+            Profile
+          </button>
+        </div>
+        <div className="block-tabs-candidates-mob">
           <button
             className={toggleState === 1 ? "tabs tabs-active" : "tabs"}
             onClick={() => toggleTab(1)}
@@ -59,21 +97,30 @@ export default function Candidate() {
         <div
           className={toggleState === 1 ? "content active-content" : "content"}
         >
+           <div className="candidate_header_text_item">
+              <div className="d-flex justify-content-between">
+                <p className="pl_30 pr_30">Filters</p> 
+                <div class="custom-button-clear ml_80" style={{ width: "130px" }}>
+                 <button>Clear all <span className="pl_10">X</span></button>
+              </div>
+              </div>
+              <div><span className="span1">616</span>< span className="span 2 fw-normal pl_5">candidates match your filters</span></div>
+            </div>
           <div>
-            <div className="row candidate_body">
-              <div className="first col-md-3">
+            <div className="candidate_body">
+              <div className="first ">
                 <div className="skills_div">
                   <p>By Skills & Experience</p>
                   <p>Clear</p>
                 </div>
                 <input
-                  class="form-control mr-sm-2 border-0 ml_5 pl_35"
+                  class="form-control mr-sm-2 border-0 ml_5 pl_35 skills_input_field"
                   type="search"
                   placeholder="Search Skills "
                   aria-label="Search"
                 />
                 <hr />
-                <div className="laravel d-flex justify-content-between">
+                <div className="laravel">
                   <button className="first_div_buttons">PHP Laravel</button>
                   <select>
                     <option value="0">Any</option>
@@ -100,7 +147,7 @@ export default function Candidate() {
                     />
                   </svg>
                 </div>
-                <div className="laravel d-flex justify-content-between mt_10">
+                <div className="laravel mt_15">
                   <button className="first_div_buttons">Core PHP</button>
                   <select>
                     <option value="0">Any</option>
@@ -127,7 +174,7 @@ export default function Candidate() {
                     />
                   </svg>
                 </div>
-                <div className="laravel d-flex justify-content-between mt_10">
+                <div className="laravel mt_15">
                   <button className="first_div_buttons">React JS</button>
                   <select>
                     <option value="0">Any</option>
@@ -154,7 +201,7 @@ export default function Candidate() {
                     />
                   </svg>
                 </div>
-                <div className="laravel d-flex justify-content-between mt_10">
+                <div className="laravel mt_15">
                   <button className="first_div_buttons">Vue JS</button>
                   <select>
                     <option value="0">Any</option>
@@ -181,7 +228,7 @@ export default function Candidate() {
                     />
                   </svg>
                 </div>
-                <div className="laravel d-flex justify-content-between mt_10">
+                <div className="laravel mt_15">
                   <button className="first_div_buttons">My SQL</button>
                   <select>
                     <option value="0">Any</option>
@@ -208,7 +255,7 @@ export default function Candidate() {
                     />
                   </svg>
                 </div>
-                <div className="laravel d-flex justify-content-between mt_10">
+                <div className="laravel mt_15">
                   <button className="first_div_buttons">Amazon AWS</button>
                   <select>
                     <option value="0">Any</option>
@@ -428,12 +475,12 @@ export default function Candidate() {
                 </div>
               </div>
 
-              <div className="sec col-md-6">
+              <div className="sec ">
                 <div className="sec-first">
                   <div className="header_sec_top">
                     <div className=" left_div_buttons">
                       <button className="btn_boosted">Boosted</button>
-                      <small>RK</small>
+                      <small>R K</small>
                       <span>7 Yrs experience</span>
                     </div>
                     <div className="right_div_buttons">
@@ -663,7 +710,7 @@ export default function Candidate() {
                 <div className="sec-fifth mt_10 ">
                   <div className="header_sec_top">
                     <div className=" left_div_buttons">
-                      <small>RK</small>
+                      <small>R K</small>
                       <span>7 Yrs experience</span>
                     </div>
                     <div className="right_div_buttons">
@@ -720,7 +767,7 @@ export default function Candidate() {
                 <div className="sec-sixth mt_10 ">
                   <div className="header_sec_top">
                     <div className=" left_div_buttons">
-                      <small>RP</small>
+                      <small>R P</small>
                       <span>7 Yrs experience</span>
                     </div>
                     <div className="right_div_buttons">
@@ -742,7 +789,7 @@ export default function Candidate() {
                             .default
                         }
                         alt=""
-                        style={{paddingLeft:"10px"}}
+                        style={{ paddingLeft: "10px" }}
                       />
                     </button>
                   </div>
@@ -831,7 +878,7 @@ export default function Candidate() {
                 </div>
               </div>
 
-              <div className="third col-md-3">
+              <div className="third ">
                 <div className=" button_image mb_10">
                   <button style={{ border: "none" }}>
                     Ad

@@ -127,7 +127,7 @@ export default function Settings() {
   return (
     <div className={classes.root}>
       <AppBar className={clsx(classes.appBar, open && classes.appBarShift)} >
-        <Toolbar className={classes.toolbar}>
+        <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
           <img
             src={Icon.Closearrow}
             alt=""
@@ -149,7 +149,7 @@ export default function Settings() {
         }}
         open={open}
       >
-        <div className={classes.toolbarIcon}>
+        <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
           <h1 className="logo">
             <a href="/">SQUIRRELL</a>
           </h1>
@@ -160,7 +160,6 @@ export default function Settings() {
             />
           </IconButton>
         </div>
-        <Divider />
         <List>{mainListItems}</List>
         <Divider />
         <List>{secondaryListItems}</List>

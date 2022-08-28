@@ -40,8 +40,8 @@ function CompanyDeatils() {
                             <p className="">Enter your details bellow</p>
                         </div>
 
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Whats your company name?' id='formControlLg' type='text' size="lg" />
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Website Link' id='formControlLg' type='text' size="lg" />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Whats your company name?' id='formControlLg' type='text'  />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Website Link' id='formControlLg' type='text'  />
                         <Select
                             className='mb-2 form-outline'
                             defaultValue={selectedOption}
@@ -49,14 +49,14 @@ function CompanyDeatils() {
                             options={document}
                             placeholder="Company Location"
                         />
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Describe your company in 20 words.' id='formControlLg' type='text' size="lg" />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Describe your company in 20 words.' id='formControlLg' type='text'  />
                         <MDBTextArea className='signupinput_field' contrast id='textAreaExample' placeholder='Long description about your company' rows={4}></MDBTextArea>
 
                         <div className="signup_divider mt_35" style={{fontSize:"16px"}}>
                             <p className="font-weight-bold text-dark">Markets</p>
                         </div>
 
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Mobile, Blockchain, SAAS' id='formControlLg' type='text' size="lg" />
+                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Mobile, Blockchain, SAAS' id='formControlLg' type='text'  />
                         <Select
                             className='mb-2 form-outline'
                             defaultValue={selectedOption1}

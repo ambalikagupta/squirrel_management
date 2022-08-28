@@ -119,7 +119,7 @@ export default function Datatable() {
   return (
     <div className={classes.root}>
       <AppBar className={clsx(classes.appBar, open && classes.appBarShift)} >
-        <Toolbar className={classes.toolbar}>
+        <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
           <img
             src={Icon.Closearrow}
             alt=""
@@ -131,7 +131,7 @@ export default function Datatable() {
           />
           <div className="members_header">
             <h2>Members</h2>
-            <div className="d-flex justify-content-center align-items-center header_select_selection">
+            <div className="header_select_selection">
               <div class="custom-select-documents" style={{ width: "100px" }}>
                 <select>
                   <option value="0">By region</option>
@@ -167,7 +167,7 @@ export default function Datatable() {
         }}
         open={open}
       >
-        <div className={classes.toolbarIcon}>
+        <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
           <h1 className="logo">
             <a href="/">SQUIRRELL</a>
           </h1>
@@ -178,16 +178,40 @@ export default function Datatable() {
             />
           </IconButton>
         </div>
-        <Divider />
         <List>{mainListItems}</List>
         <Divider />
         <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
-        <div className={classes.appBarSpacer} />
 
         <div className="members_div row">
           <div className="col-md-9">
+          <div className="header_select_selection-mob">
+              <div class="custom-select-documents" style={{ width: "100px" }}>
+                <select>
+                  <option value="0">By region</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+              <div class="custom-select-documents" style={{ width: "135px" }}>
+                <select>
+                  <option value="0">By Designerion</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+              <div class="custom-select-documents" style={{ width: "100px" }}>
+                <select>
+                  <option value="0">By Role</option>
+                  <option value="1">None</option>
+                  <option value="2">One</option>
+                  <option value="3">Two</option>
+                </select>
+              </div>
+            </div>
             <div>
               <form class="form-inline members_form_group">
                 <div className="member_search">
@@ -214,7 +238,7 @@ export default function Datatable() {
                 </div>
               </form>
 
-              <div className="full_member_div mt_50">
+              <div className="full_member_div mt_35">
                 <p>Full Members (14)</p>
                 <p>Invited (2)</p>
               </div>

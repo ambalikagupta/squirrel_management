@@ -1,183 +1,452 @@
+/*-----------------------------------------------Desktop and Laptop Media Query Start-------------------------------------------------------------*/
+
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+      font-size: 1.10rem !important;
+      border: none !important;
+  }
+
+  .main-header .button1 {
+      display: none;
+  }
+
+  .main-header .mob-button {
+      display: block;
+      background: #000000;
+      border: 1px solid #242529;
+      border-radius: 100px;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+      color: #f6f6f6;
+      padding: 8px 20px;
+      border: none;
+  }
+
+  .makeStyles-menuButton-6 {
+      position: absolute;
+      top: 25px;
+      left: 22px;
+  }
+
+  .members_header h2, .profile_header h2 {
+      margin-left: 30px;
+      margin-right: 30px;
+      /* position: absolute;
+      top: 20px;
+      left: 40px; */
+  }
+  .header_select_selection-mob {
+      display: flex;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+  }
+  .header_select_selection {
+      display: none;
+  }
+  .MuiToolbar-regular,
+  .makeStyles-toolbarIcon-3 {
+      min-height: 64px !important;
+  }
+}
+
+@media (min-width:991px) and (max-width:1023px) {
+  .main-header .button1 {
+      padding: 8px 10px;
+  }
+
+  .navbar_navigation a {
+      font-size: 13px;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1199px) {
+  .main-header .button1 {
+      padding: 8px 10px;
+  }
+
+  .navbar_navigation a {
+      font-size: 13px;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .madhouse_music {
+      left: 0;
+      max-width: 320px !important;
+      width: 100%;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0;
+      top: 40px;
+  }
+  .members_div {
+      display: block !important;
+  }
+  .members_div .col-md-9 {
+      max-width: 100%;
+  }
+  .members_div .col-md-3 {
+      max-width: 100%;
+      margin-top: 20px;
+  }
+  .datatable_table {
+      width: calc(100% - 832px) !important;
+  }
+  .members_salary_incentive {
+      border-left: none;
+  }
+  .organization_tab_div,.candidate_body {
+      display: block !important;
+  }
+  .company_details_locations {
+      max-width: 100% !important;
+      margin-top: 50px;
+      border-left: none;
+  }
+  .candidate_body .first,.candidate_body .sec, .candidate_body .third {
+      margin-top: 20px;
+      max-width: 100% !important;
+      margin: 10px;
+      margin-right: 10px;
+  }
+  .first .laravel {
+      justify-content: flex-start;
+  }
+  
+  .organization_tab_div .col-md-9 {
+      max-width: 100% !important;
+  }
+}
+
+
+
+@media (min-width:1600px) {
+  .row.loginpage {
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
+  .row.signuppage {
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
+  .makeStyles-root-1 {
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
+  .makeStyles-appBarShift-5 {
+      max-width: 1260px;
+      margin-left: 320px !important;
+  }
+
+  .MuiAppBar-positionFixed {
+      right: unset !important;
+  }
+
+  .MuiAppBar-root {
+      width: 1600px !important;
+  }
+  .edit_document_main  {
+        max-width: 1600px;
+        margin: 0 auto;
+  }
+  .candidate_main_div {
+      max-width: 1600px;
+      margin: 0 auto;
+  }
+
+  .login_account_div p,
+  .logininput_field::placeholder,
+  .divider p,
+  .forgot_password_link a,
+  .forgot_password_link button,
+  .socialmedia_button button,
+  .signup_sidenav .new_account,
+  .signup_details h6,
+  .signup_details p,
+  .signupinput_field::placeholder,
+  .signup_divider p,
+  .signup_button button,
+  .sidenav a,
+  .sidenav_bottom_div span,
+  .create_project p,
+  .madhouse_top_sec h6,
+  .accor .profilename,
+  .edit_box_header .profilename,
+  .accor .designation,
+  .edit_box_header .designation,
+  .documents_text .scope_work,
+  .custom-select-documents select,
+  .search_document input::placeholder,.activity_button .button1,.activity_button .button2,.member_table_head,.members_salary_incentive h6 ,.navbar_navigation a,.company_details p{
+      font-size: 17px;
+      line-height: 24px;
+  }
+
+  .login_account_div .craete-link {
+      font-size: 18px;
+      padding: 15px 24px;
+  }
+
+  .divider h2,
+  .signup_header_logo,
+  .logo a {
+      font-size: 28px;
+  }
+
+  .loginpage_field {
+      max-width: 450px;
+  }
+
+  .logininput_field,
+  .signupinput_field {
+      height: 60px !important;
+  }
+
+  .socialmedia_div .lead,
+  .main-header .button1,
+  .madhouse_top_first h6,.document_header h2,.full_member_div p:first-child,.full_member_div p:last-child,.members_header h2,.setting_right_section p:first-child,.overview_section .overview,.company_details_locations h6,.profile_header h2 {
+      font-size: 21px;
+  }
+
+  .madhouse_top_first p,
+  .madhouse_top_sec small,
+  .addicon_button .button1,
+  .addicon_button .button2,
+  .addicon_button .button3,
+  .madhouse_bootom_section p,
+  .documents_text .pt_5,.custom-select-activity select,.accor .time, .edit_box_header .time,.accor .edit_button,.document_header .text-muted,.document_button .button1,.document_button .button2,.text-muted2,.rightside_div .btn_invite,.rightside_div .select_member,.rightside_div .invite_member,.member_table_body_row,.salary-description p,.form_group label,.tabs,.setting_right_section p,.specialities_button button,.address_description,.small_addons_description p {
+      font-size: 16px;
+      line-height: 18px;
+  }
+  .setting_right_section span,.overview_section p,.company_details .link,.company_details span {
+      font-size: 15px;
+      line-height: 25px;
+  }
+
+  .specialities_button button {
+      padding: 15px 25px
+  }
+
+  .signup_divider h2,
+  .documents_header h2,.activity_header h2,.projectsetting_header h2 {
+      font-size: 30px;
+  }
+
+  .makeStyles-drawerPaper-9 {
+      width: 320px !important;
+  }
+  .makeStyles-drawerPaperClose-10 {
+      width: 72px !important;
+  }
+  .MuiToolbar-regular,.makeStyles-toolbarIcon-3 {
+      min-height: 75px !important;
+  }
+
+  .cards_documents .col-md-3 {
+      max-width: 300px;
+  }
+
+  .card-block img {
+      min-height: 320px;
+  }
+
+  .search_document {
+      width: 250px;
+  }
+
+  .custom-select-documents {
+      margin-right: 30px;
+  }
+  .members_div {
+      margin-top: 50px !important;
+    }
+    .rightside_div .select_member {
+      width: 150px;
+    }
+    .projectsetting_header h2 ,.block-tabs{
+      margin-top: 20px;
+    }
+}
+
+
+/*------------------------------------------------Desktop and Laptop Media Query End-------------------------------------------------------------*/
+
 
 /*-------------------------------------------Mobile Media Query Start-----------------------------------------------------------------*/
-@media (min-width:320px) and (max-width:345px) {
-    /* .edit_box_header .designation {
-        padding-left: 50px;
-    }
-    .edit_report_header .flex-wrap {
-      flex-wrap: wrap;
-    } */
-    .ql-editor h2{
-        font-size: small;
-    }
-    .ql-toolbar.ql-snow {
-        padding: 0px;
-    }
-   
+@media (min-width:320px) and (max-width:350px) {
+  .edit_report_header {
+      display: block;
+  }
 }
 
 @media (max-width:424px) {
-    .edit_box_header .designation, .edit_box_header .profilename {
-        font-size: 12px;
-    }
-    .custom-select-activity select {
-        font-size: 12px;
-    }
-    .modal-content .pb_20.pt_20.pl_20.pr_20 {
-        padding: 10px;
-    }
-    .projectsetting_header h2 {
-        font-size: 20px;
-      }
-      .tabs {
-        padding: 7px 5px;
-       
-    }
-    .accor {
-        padding: 5px;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    .edit_report_header {
-        position: relative;
-    }
-    .edit_report_header .profilename {
-        position: absolute;
-        top: -5px;
 
-    }
-    .edit_report_header .designation {
-        position: absolute;
-        top: 15px;
-    }
+  .edit_box_header .designation,
+  .edit_box_header .profilename {
+      font-size: 12px;
+  }
+
+  .accor {
+      padding: 5px;
+      margin: 0;
+      margin-bottom: 10px;
+  }
+
+  .edit_report_header {
+      position: relative;
+  }
+
+  .edit_report_header .profilename {
+      position: absolute;
+      top: -5px;
+
+  }
+
+  .edit_report_header .designation {
+      position: absolute;
+      top: 15px;
+  }
+  .organization_div {
+      display: block;
+  }
+  .makeStyles-appBarShift-5 {
+      width: calc(100% - 385px) !important;
+  }
 }
 
 @media (max-width:600px) {
-   
+  .cards_documents .col-md-3 {
+      max-width: 100%;
+  }
+
+  .card-block img {
+      max-width: 400px;
+      width: 100%;
+  }
+  .activity_accordion_header {
+      display: block;
+  }
+  .sec .header_sec_top {
+     display: block;
+  }
+  .right_div_buttons,.left_div_buttons {
+      justify-content: flex-start;
+      margin-top: 10px;
+  }
+  .candidate_header_text_item {
+      display: block;
+  }
+  .candidate_header_text_item .span1 {
+      margin-left: 25px;
+  }
 }
 
 @media (max-width:767px) {
-    .loginpage_field {
-        margin: 30px auto
-    }
-    .cards_documents {
-        justify-content: flex-start;
-      }
-      .signup_divider h2 {
-        margin-top: 0px;
-    }
-    .signup_sidenav {
-        margin: 0px 20px;
-    }
-    .document_search{
-        margin-left: 24px;
-    } 
-    .document_header {
-        flex-wrap: wrap;
-    }
-    .company_details_locations h6{
-        margin-top: 15px;
-    }
-    .project_expenses img {
-        top: 20px;
-      }
-      .MuiDrawer-root {
-        position: absolute;
-        left: 0;
-      }
-      .MuiDrawer-paper {
-        height: 107vh !important;
-      }
-      .sidenav a {
-        padding: 10px 15px;
-      }
-      .makeStyles-content-12 {
-        margin-left: 75px !important;
-      }
-      .accor .body {
-        padding: 0px 11px;
-    }
-    .actvity_header_titleleft {
-        margin-top: 10px !important;
-        margin-bottom: 20px !important;
-        position: relative;
-    }
-    .actvity_header_titleleft .designation {
-        position: absolute;
-        top: 28px;
-        left: 120px;
-        font-size: 11px;
-        width: 100%
-    }
-    .activity_header_select {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        row-gap: 10px;
-    }
+  .loginpage_field {
+      margin: 30px auto;
+  }
+
+  .project_expenses {
+      background-color: #fff !important;
+  }
+
+  .project_expenses img {
+      top: 0px;
+  }
+
+  .signup_header_logo {
+      padding: 30px 20px;
+  }
+
+  .signup_sidenav {
+      margin: 20px 20px;
+  }
+
+  .signup_sidenav hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .signup_divider h2 {
+      margin-top: 40px;
+  }
+
+  .signuppage_field {
+      margin: 20px auto;
+  }
+
+  .MuiDrawer-root {
+      position: absolute;
+      left: 0;
+  }
+
+  .MuiDrawer-paper {
+      height: 107vh !important;
+  }
+
+  .sidenav a {
+      padding: 10px 15px;
+  }
+
+  .makeStyles-content-12 {
+      margin-left: 75px !important;
+  }
+
+  .accor .body {
+      padding: 0px 11px;
+  }
+
+  .actvity_header_titleleft {
+      margin-top: 10px !important;
+      margin-bottom: 20px !important;
+      position: relative;
+  }
+
+  .actvity_header_titleleft .designation {
+      position: absolute;
+      top: 30px;
+      left: 120px;
+      font-size: 11px;
+      width: 100%
+  }
+
+  .activity_header_select {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      row-gap: 10px;
+  }
+  .members_div .col-md-9 {
+      margin-top: 50px !important;
+  }
+  .projectsetting_header h2 {
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+  .tabs {
+      padding: 10px 6px;
+  }
+  .block-tabs-candidates {
+      display: none;
+  }
+  .portfolio_cards {
+      flex-wrap: wrap;
+  }
+  .portfolio-card-blocks img {
+      max-width: 100%;
+      height: 25%;
+  }
 }
-   
- 
-  /*-----------------------------------------------Mobile Media Query End---------------------------------------------------------------*/
-  /*-----------------------------------------------Desktop and Laptop Media Query Start-------------------------------------------------------------*/
-  
-  
-  @media (max-width: 991px) {
-    .navbar-toggler {
-        font-size: 1.10rem !important;
-        border: none !important;
-    }
-    .main-header .button1 {
-        display: none;
-      }
-      .main-header .mob-button {
-        display: block;
-        background: #000000;
-        border: 1px solid #242529;
-        border-radius: 100px;
-        font-family: "SF Pro Display";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 15px;
-        color: #f6f6f6;
-        padding: 8px 20px;
-        border: none;
-      }
-      .makeStyles-menuButton-6 {
-        position: absolute;
-        top: 22px;
-        left: 22px;
-      }
-      .members_header h2 {
-        margin-left: 40px;
-      }
 
-  }
-  
 
-  @media (max-width: 1200px) {
-    .skills_section_buttons{
-        flex-wrap: wrap;
-    }
-    .members_div {
-        display: block !important;
-    }
-    .members_div .col-md-9 {
-        max-width: 100%;
-    }
-    .members_div .col-md-3 {
-        max-width: 100%;
-        margin-top: 20px;
-    }
-    .datatable_table {
-        width: 832px !important;
-    }
-  }
-  
-
-  
-  @media (min-width:1400px) {
-   
-  }
-    /*------------------------------------------------Desktop and Laptop Media Query End-------------------------------------------------------------*/
-  
+/*-----------------------------------------------Mobile Media Query End---------------------------------------------------------------*/

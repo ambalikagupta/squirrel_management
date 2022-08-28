@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Profile() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -125,7 +125,7 @@ export default function Profile() {
   return (
     <div className={classes.root}>
       <AppBar className={clsx(classes.appBar, open && classes.appBarShift)}>
-        <Toolbar className={classes.toolbar}>
+        <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
           <img
             src={Icon.Closearrow}
             alt=""
@@ -167,7 +167,7 @@ export default function Profile() {
         }}
         open={open}
       >
-        <div className={classes.toolbarIcon}>
+        <div className={classes.toolbarIcon} style={{minHeight:"45px"}}>
           <h1 className="logo">
             <a href="/">SQUIRRELL</a>
           </h1>
@@ -178,12 +178,11 @@ export default function Profile() {
             />
           </IconButton>
         </div>
-        <Divider />
         <List>{mainListItems}</List>
         <Divider />
         <List>{secondaryListItems}</List>
       </Drawer>
-      <main>
+      <main className={classes.content}>
         <div className={classes.appBarSpacer} style={{ minHeight: "45px" }} />
         <div>
           <div className="content-tabs">
