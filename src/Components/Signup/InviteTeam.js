@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../assets/css/style.css"
+import "../../assets/css/fonts.css"
 import "../../assets/css/responsive.css"
 import { Link } from 'react-router-dom';
 import { MDBContainer, MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
@@ -19,9 +20,9 @@ function SignUp() {
                         <p className='new_account'>Create new Account</p>
                         <hr className='mt_20 mb_20' style={{border: "1px solid rgba(255, 255, 255, 0.2)"}}  />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
-                            <p className='company_information'>Your  company’s information<img className='pl_5'  src={Icon.Check}></img></p>
-                            <p className='team'>Team</p>
+                            <h6 className='pt_5 pb_5 ml_15'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
+                            <p className='company_information ml_15'>Your  company’s information<img className='pl_5'  src={Icon.Check}></img></p>
+                            <p className='mr_15'><span className='linetext mr_15'></span>Team</p>
                         </div>
                     </div>
                 </MDBCol>

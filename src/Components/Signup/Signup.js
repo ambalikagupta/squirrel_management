@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../assets/css/style.css"
+import "../../assets/css/fonts.css"
 import "../../assets/css/responsive.css"
 import { Link } from 'react-router-dom';
 import { MDBContainer, MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
@@ -19,9 +20,9 @@ function SignUp() {
                         <p className='new_account'>Create new Account</p>
                         <hr style={{border: "1px solid rgba(255, 255, 255, 0.2)"}} className='mt_30 mb_30' />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5'>Personal Deatils</h6>
-                            <p>Yours Company Name</p>
-                            <p>Team</p>
+                            <h6 className='pt_5 pb_5'><span className='linetext mr_15'></span>Personal Deatils</h6>
+                            <p className='ml_15'>Yours Company Name</p>
+                            <p className='ml_15'>Team</p>
                         </div>
                     </div>
                 </MDBCol>
@@ -49,8 +50,10 @@ function SignUp() {
                                 </button>
                             </div>
                         </div>
-
-                        <hr className='or_before mt_30 mb_30' />
+<div style={{position:"relative"}}>
+<span className='or_text'>Or</span> <hr className='or_before mt_30 mb_20' />
+</div>
+                       
 
                         <div className="signup_divider">
                             <h2 className="">What’s your full name?</h2>

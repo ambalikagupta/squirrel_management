@@ -1,9 +1,11 @@
 import React from 'react';
 import "../../assets/css/style.css"
+import "../../assets/css/fonts.css"
 import "../../assets/css/responsive.css"
 import { Link } from 'react-router-dom';
 import { MDBContainer, MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
 import { Icon } from "../../Utilities/Icon"
+
 
 function Login() {
 

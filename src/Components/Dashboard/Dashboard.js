@@ -152,7 +152,7 @@ export default function Dashboard() {
                         <div><span className="letter_circle1">N</span></div>
                         <div className="pl_20">
                             <h6>Madhouse Music App</h6>
-                            <p>Music mobile app to stream mixes, which has admin syste, vendor panel, user mobile app.</p>
+                            <p className="mb_35">Music mobile app to stream mixes, which has admin syste, vendor panel, user mobile app.</p>
                         </div>
                     </div>
 
@@ -187,7 +187,7 @@ export default function Dashboard() {
                         <p>Members and cost</p>
 
                         <div className="edit_box_header">
-                            <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/profilepic.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span></div>
+                            <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rushabpatel_two.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span></div>
                                 <div><span className="designation pl_5 pr_5">74hr . 30min</span><span className="designation pl_5 pr_5">$760</span></div></div>
                         </div>
                         <hr />

@@ -25,13 +25,14 @@ export const mainListItems = (
 
 export const secondaryListItems = (
     <div className="sidenav">
-        <div className="create_project pt_20 pb_10 pl_15 pr_10">
+        <div className="create_project  pb_10 pl_15 pr_10">
             <p>Projects</p>
             <a href="#">Create new Project +</a>
         </div>
 
         <div className="sidenav_bottom_div">
-            <a href="#"><span className="letter_circle1">M</span><span className="pl_15">Madhouse Music App</span></a>
+            <a href="#">
+            <span className="letter_circle1">M</span><span className="pl_15">Madhouse Music App</span></a>
             <a href="#"><span className="letter_circle2">N</span><span className="pl_15">NFT Marketplace</span></a>
             <a href="#"><span className="letter_circle3">S</span><span className="pl_15">sdsds</span></a>
             <a href="#"><span className="letter_circle4">W</span><span className="pl_15">Wolfsoft Management</span></a>

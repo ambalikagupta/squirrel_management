@@ -694,7 +694,7 @@
 }
 
 .login_account_div p {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -708,26 +708,30 @@
   border: 1px solid #8b8b8b;
   border-radius: 100px;
   padding: 12px 19px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #151417;
+  letter-spacing: 0.3px;
 }
 
 .divider h2 {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.02em;
   color: #000000;
+} 
+.divider span {
+  font-family:"SF Pro Display Bold"; ;
 }
 
 .divider p {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -748,15 +752,16 @@
 }
 
 .logininput_field::placeholder {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #7f8197;
+  transform: translate3d(0, -1.6px, 0);
 }
 
 .forgot_password_link a {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -769,9 +774,9 @@
   background: #3653f6;
   border-radius: 3px;
   padding: 12px 40px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   border: none;
@@ -780,14 +785,14 @@
 }
 
 .socialmedia_div .lead {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #151417;
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
 .socialmedia_button {
@@ -798,7 +803,7 @@
   border: 1px solid #d6d6d654;
   border-radius: 3px;
   background: none !important;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -825,7 +830,7 @@
 }
 
 .signup_header_logo {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Heavy";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -841,7 +846,7 @@
 }
 
 .signup_sidenav .new_account {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -851,7 +856,7 @@
 }
 
 .signup_details h6 {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -864,15 +869,28 @@
 .signup_details p {
   font-family: "SF Pro Display";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
 }
 
-.or_before::before {
-  content: "Or";
+
+.or_before {
+  width: 88%;
+}
+
+.or_text {
+  position: absolute;
+  top: -12px;
+  font-family: "SF Pro Display Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #151417;
 }
 
 .signuppage_field {
@@ -885,18 +903,21 @@
 }
 
 .signup_divider h2 {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Heavy";
   font-style: normal;
   font-weight: 800;
   font-size: 27px;
   line-height: 32px;
   letter-spacing: 0.02em;
   color: #151417;
-  margin-top: 80px;
+  margin-top: 60px;
+}
+.linetext {
+  border-left: 1px solid #ffffff;
 }
 
 .signup_divider p {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -916,13 +937,45 @@
   font-size: 14px;
   line-height: 17px;
   color: #7f8197;
+  /* vertical-align: center; */
+  transform: translate3d(0, -1.6px, 0);
+}
+
+.textarea_inputfield::placeholder {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7f8197;
+  transform: translate3d(0, 5px, 0);
+}
+
+.textarea_inputfield {
+  min-height: 140px;
+}
+
+.signupinput_field .css-1s2u09g-control {
+  min-height: 50px !important;
+  background: none !important;
+  border: 1px solid #ced4da !important;
+}
+
+.signupinput_field .css-1s2u09g-control::placeholder {
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7f8197;
+  transform: translate3d(0, 5px, 0);
 }
 
 .signup_button button {
   background: #3653f6;
   border-radius: 3px;
   padding: 12px 70px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -962,7 +1015,7 @@
 }
 
 .addmore_team_link a {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -984,9 +1037,8 @@
   background: #ffffff;
 }
 
-
 .logo a {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Heavy";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -1014,8 +1066,8 @@
 }
 
 .sidenav a {
-  padding: 5px 8px 8px 24px;
-  font-family: 'Inter', sans-serif;
+  padding: 5px 8px 8px 15px;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1031,7 +1083,7 @@
 }
 
 .create_project p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -1041,7 +1093,7 @@
 }
 
 .create_project a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -1053,7 +1105,7 @@
 .sidenav_bottom_div a {
   display: flex;
   align-items: center;
-  padding: 5px 8px 8px 20px;
+  padding: 5px 8px 8px px;
 }
 
 .sidenav_bottom_div .letter_circle1 {
@@ -1087,7 +1139,7 @@
 }
 
 .sidenav_bottom_div span {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1162,7 +1214,7 @@
 }
 
 .navbar_navigation a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1201,7 +1253,7 @@
   background: #fff1a6;
   border-radius: 50%;
   padding: 6px 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1213,7 +1265,7 @@
 }
 
 .madhouse_top_first h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1222,7 +1274,7 @@
 }
 
 .madhouse_top_first p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1231,7 +1283,7 @@
 }
 
 .madhouse_top_sec h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1241,7 +1293,7 @@
 }
 
 .madhouse_top_sec small {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1262,7 +1314,7 @@
   padding: 14px 0px;
   text-transform: capitalize;
   color: #151417;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1291,7 +1343,7 @@
 }
 
 .madhouse_bootom_section p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -1332,7 +1384,7 @@
 }
 
 .documents_text .scope_work {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1341,7 +1393,7 @@
 }
 
 .documents_text .pt_5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1356,11 +1408,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  border-bottom: 1px solid #E1E3E9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .documents_header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1388,7 +1440,7 @@
 }
 
 .search_document input::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1399,7 +1451,7 @@
 }
 
 .custom-select-documents select {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1421,11 +1473,11 @@
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
-  border-bottom: 1px solid #E1E3E9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .activity_header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1449,7 +1501,7 @@
 }
 
 .search_document input::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1460,7 +1512,7 @@
 }
 
 .custom-select-activity select {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1482,7 +1534,7 @@
 .activity_button .button1 {
   background: #3653f6;
   border-radius: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1496,7 +1548,7 @@
   background: #f1f1f1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1521,7 +1573,7 @@
 
 .accor .time,
 .edit_box_header .time {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1531,7 +1583,7 @@
 
 .accor .profilename,
 .edit_box_header .profilename {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1541,7 +1593,7 @@
 
 .accor .designation,
 .edit_box_header .designation {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1555,7 +1607,7 @@
   padding: 6px 15px;
   text-transform: capitalize;
   color: #151417;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1567,7 +1619,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 150ms ease-in-out;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1576,7 +1628,7 @@
   padding: 0px 90px;
 }
 
-.accor.active>.body {
+.accor.active > .body {
   max-height: 600px;
   padding-bottom: 15px;
 }
@@ -1590,7 +1642,7 @@
 }
 
 .modal_title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700 !important;
   font-size: 16px !important;
@@ -1605,7 +1657,7 @@
 }
 
 .modal_footer .hours_worked {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1619,7 +1671,7 @@
   background: #f6f6f6;
   border: 1px solid #e2e2e2;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1666,7 +1718,7 @@
 }
 
 .document_header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -1675,7 +1727,7 @@
 }
 
 .document_header .text-muted {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1724,7 +1776,7 @@
 }
 
 .modal_body_toggle .link_text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1770,15 +1822,15 @@
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #08bd7c;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px #08bd7c;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -1819,7 +1871,7 @@ input:checked+.slider:before {
   background: #19b858;
   border-radius: 6px;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1829,7 +1881,7 @@ input:checked+.slider:before {
 }
 
 .profilename_client {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1841,11 +1893,11 @@ input:checked+.slider:before {
 
 /* -------------------------------------------------------/* Project Settings css Start *------------------------------------- */
 .projectsetting_header {
-  border-bottom: 1px solid #E1E3E9;
+  border-bottom: 1px solid #e1e3e9;
 }
 
 .projectsetting_header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1914,7 +1966,7 @@ input:checked+.slider:before {
   background: #f6f6f6;
   border-radius: 4px;
   padding: 12px 70px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1952,7 +2004,7 @@ input:checked+.slider:before {
 }
 
 .members_header h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -1980,7 +2032,7 @@ input:checked+.slider:before {
 }
 
 .member_search {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e2e2e2;
@@ -2003,7 +2055,7 @@ input:checked+.slider:before {
 }
 
 .form-inline input::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2016,7 +2068,7 @@ input:checked+.slider:before {
 }
 
 .rightside_div .invite_member {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 225px;
   font-size: 13px;
   line-height: 16px;
@@ -2034,7 +2086,7 @@ input:checked+.slider:before {
 }
 
 .rightside_div .select_member {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 101px;
   font-weight: 600;
   font-size: 13px;
@@ -2045,7 +2097,7 @@ input:checked+.slider:before {
 }
 
 .rightside_div .btn_invite {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   width: 101px;
   border: none;
   font-weight: 500;
@@ -2065,7 +2117,7 @@ input:checked+.slider:before {
 }
 
 .full_member_div p:first-child {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -2074,7 +2126,7 @@ input:checked+.slider:before {
 }
 
 .full_member_div p:last-child {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #8b8b8b;
   font-weight: 500;
   font-size: 16px;
@@ -2089,7 +2141,7 @@ input:checked+.slider:before {
 }
 
 .member_table_head {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -2104,7 +2156,7 @@ input:checked+.slider:before {
 }
 
 .member_table_body_row {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2121,12 +2173,11 @@ input:checked+.slider:before {
 
 .members_salary_incentive {
   padding: 20px 10px;
-  border-left: 1px solid #E1E3E9;
-  ;
+  border-left: 1px solid #e1e3e9;
 }
 
 .members_salary_incentive h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -2143,7 +2194,7 @@ input:checked+.slider:before {
 }
 
 .salary-description p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2167,7 +2218,7 @@ input:checked+.slider:before {
   outline: none;
   background: white;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2196,7 +2247,7 @@ input:checked+.slider:before {
   align-items: center;
   gap: 15px;
   padding: 25px 0px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   border-bottom: 1px solid #e1e3e9;
 }
 
@@ -2236,7 +2287,7 @@ input:checked+.slider:before {
 }
 
 .organization_tab_div {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 !important;
 }
 
@@ -2295,7 +2346,7 @@ input:checked+.slider:before {
 }
 
 .specialities_button button {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -2313,7 +2364,7 @@ input:checked+.slider:before {
 }
 
 .company_details_locations h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -2328,7 +2379,7 @@ input:checked+.slider:before {
 }
 
 .address_description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2336,7 +2387,7 @@ input:checked+.slider:before {
 }
 
 .small_addons_description p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2371,7 +2422,7 @@ input:checked+.slider:before {
 }
 
 .candidate_header_text_item p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -2380,8 +2431,10 @@ input:checked+.slider:before {
   color: #242529;
 }
 
-.candidate_header_text_item .span1 ,.candidate_header_text_item, .span2 {
-  font-family: 'Inter';
+.candidate_header_text_item .span1,
+.candidate_header_text_item,
+.span2 {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -2391,18 +2444,17 @@ input:checked+.slider:before {
 }
 
 .custom-button-clear button {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #242529;
   background: none;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
   border-radius: 2px;
   padding: 5px 15px;
 }
-
 
 .candidate_body {
   display: flex;
@@ -2410,7 +2462,7 @@ input:checked+.slider:before {
   background-color: #d6d6d654;
   padding: 20px 0px;
   margin: 0 !important;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /* column-gap: 13px; */
   justify-content: space-between;
 }
@@ -2451,13 +2503,11 @@ input:checked+.slider:before {
 
 /* third */
 
-
 .candidate_body .third .image_2 {
   max-width: 320px;
   width: 100%;
   overflow: hidden;
 }
-
 
 /* middle */
 
@@ -2639,7 +2689,7 @@ input:checked+.slider:before {
 }
 
 .skills_input_field::placeholder {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px !important;
@@ -2752,7 +2802,7 @@ input:checked+.slider:before {
 }
 
 .profile_header h2 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
