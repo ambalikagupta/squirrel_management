@@ -856,23 +856,52 @@
 }
 
 .signup_details h6 {
-  font-family: "SF Pro Display Bold";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: #ffffff;
   /* border-left: 1px solid #FFFFFF ; */
 }
 
-.signup_details p {
-  font-family: "SF Pro Display";
+.signup_details .sign_up {
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+color: rgba(255, 255, 255, 0.7);
+}
+
+.signup_details .invite_teams {
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+color: rgba(255, 255, 255, 0.7);
+}
+.signup_details .inv_team{
+  font-family: 'SF Pro Display Regular ';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+
+.signup_details .com_details {
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: #ffffff;
 }
 
@@ -931,7 +960,7 @@
 }
 
 .signupinput_field::placeholder {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -942,7 +971,7 @@
 }
 
 .textarea_inputfield::placeholder {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -986,7 +1015,7 @@
 }
 
 .signup_details .company_information {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -996,7 +1025,7 @@
 }
 
 .signupinput_field option {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px !important;
@@ -1585,7 +1614,7 @@
 .edit_box_header .profilename {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   color: #000000;

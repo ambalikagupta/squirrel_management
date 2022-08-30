@@ -22,7 +22,7 @@ function SignUp() {
                         <div className='signup_details'>
                             <h6 className='pt_5 pb_5 ml_15'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
                             <p className='company_information ml_15'>Your  company’s information<img className='pl_5'  src={Icon.Check}></img></p>
-                            <p className='mr_15'><span className='linetext mr_15'></span>Team</p>
+                            <p className='inv_team mr_15'><span className='linetext mr_15'></span>Team</p>
                         </div>
                     </div>
                 </MDBCol>

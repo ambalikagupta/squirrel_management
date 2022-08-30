@@ -22,12 +22,12 @@ function CompanyDeatils() {
                 <MDBCol col='10' md='3' style={{ background: "#3653F6" }}>
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
-                        <p className='new_account'>Create new Account</p>
+                        <p className='new_account'>Creating new Account</p>
                         <hr className='mt_20 mb_20'style={{border: "1px solid rgba(255, 255, 255, 0.2)"}}  />
                         <div className='signup_details'>
                             <h6 className='pt_5 pb_5 ml_15'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
-                            <p className='company_information'><span className='linetext mr_15'></span>Your  company’s information</p>
-                            <p className='ml_15'>Team</p>
+                            <p className='com_details'><span className='linetext mr_15'></span>Your  company’s information</p>
+                            <p className='invite_teams ml_15'>Team</p>
                         </div>
                     </div>
                 </MDBCol>
