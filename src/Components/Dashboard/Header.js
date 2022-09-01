@@ -9,13 +9,14 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar_navigation">
-          <NavDropdown title="Madhouse Music App" id="basic-nav-dropdown">
-            <NavDropdown.Item>Option 1</NavDropdown.Item>
-            <NavDropdown.Item>Option 2</NavDropdown.Item>
-            {/* <DropdownItem divider /> */}
-            <NavDropdown.Item>Reset</NavDropdown.Item>
-          </NavDropdown>
-
+          <Nav.Link href="#"><div class="custom-select-activity-nav">
+            <select>
+              <option value="0">Madhouse Music App </option>
+              <option value="1">None</option>
+              <option value="2">One</option>
+              <option value="3">Two</option>
+            </select>
+          </div></Nav.Link>
           <Nav.Link href="#">Overview</Nav.Link>
 
           <Nav.Link href="#">Documents</Nav.Link>

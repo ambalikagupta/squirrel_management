@@ -23,19 +23,19 @@ function Login() {
 
           <div className="loginpage_field">
             <div className="divider">
-              <h2 className="">Login with <span className='font-weight-bolder'>SQUIRRELL</span></h2>
-              <p className="">Enter your details below</p>
+              <h2 className="">Login to <span className='font-weight-bolder'>SQUIRRELL</span></h2>
+              <p className="">Enter your details bellow</p>
             </div>
 
-            <MDBInput className='logininput_field' wrapperClass='mt_40 mb-2' placeholder='Enter your email' id='formControlLg' type='email' />
+            <MDBInput className='logininput_field' wrapperClass='mt_35 mb-2' placeholder='Enter your email id' id='formControlLg' type='email' />
             <MDBInput wrapperClass='mb-2' className='logininput_field' placeholder='Passowrd' id='formControlLg' type='password'  />
 
             <div className="forgot_password_link d-flex justify-content-between align-items-center mb_45">
-              <a href="!#">Forgot password?</a>
+              <a href="!#" className='pl_5'>Forgot Password?</a>
               <button className="">Login</button>
             </div>
 
-            <hr />
+            <hr style={{width:"140%", marginLeft:"-55px"}} />
 
             <div className="socialmedia_div mt_30">
 

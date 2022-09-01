@@ -7,7 +7,7 @@ import { MDBContainer, MDBCol, MDBRow, MDBInput } from 'mdb-react-ui-kit';
 import { Icon } from "../../Utilities/Icon"
 
 function SignUp() {
-       
+
 
     return (
         <MDBContainer fluid >
@@ -17,10 +17,10 @@ function SignUp() {
                 <MDBCol col='10' md='3' style={{ background: "#3653F6" }}>
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
-                        <p className='new_account'>Creating new Account</p>
-                        <hr style={{border: "1px solid rgba(255, 255, 255, 0.2)"}} className='mt_30 mb_30' />
+                        <p className='new_account ml_15'>Creating New Account</p>
+                        <hr style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)", width:"90%" }} className='mt_25 mb_25' />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5'><span className='linetext mr_15'></span>Personal details</h6>
+                            <h6 className='pt_5 pb_10'><span className='linetext mr_15'></span>Personal details</h6>
                             <p className='sign_up ml_15'>Your company’s name?</p>
                             <p className='sign_up ml_15'>Team</p>
                         </div>
@@ -50,10 +50,10 @@ function SignUp() {
                                 </button>
                             </div>
                         </div>
-<div style={{position:"relative"}}>
-<span className='or_text'>Or</span> <hr className='or_before mt_30 mb_20' />
-</div>
-                       
+                        <div className='mt_50' style={{ position: "relative" }}>
+                            <span className='or_text'>Or</span> <hr className='or_before' />
+                        </div>
+
 
                         <div className="signup_divider">
                             <h2 className="">What’s your full name?</h2>
@@ -67,7 +67,7 @@ function SignUp() {
                         <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Re Password' id='formControlLg' type='resetpassword' />
 
                         <div className="signup_button d-flex justify-content-end mb-4">
-                          <Link to='/companydetails'>  <button className="btn-primary pt_5 pl_30 pb_5 pr_30 ">Next</button></Link>
+                            <Link to='/companydetails'>  <button className="btn-primary pt_5 pl_30 pb_5 pr_30 ">Next</button></Link>
                         </div>
 
                     </div>

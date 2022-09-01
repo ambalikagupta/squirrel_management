@@ -17,12 +17,12 @@ function SignUp() {
                 <MDBCol col='10' md='3' style={{ background: "#3653F6" }}>
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
-                        <p className='new_account'>Create new Account</p>
-                        <hr className='mt_20 mb_20' style={{border: "1px solid rgba(255, 255, 255, 0.2)"}}  />
+                        <p className='new_account ml_15'>Creating New Account</p>
+                        <hr style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)", width:"90%" }} className='mt_25 mb_25' />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5 ml_15'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
-                            <p className='company_information ml_15'>Your  company’s information<img className='pl_5'  src={Icon.Check}></img></p>
-                            <p className='inv_team mr_15'><span className='linetext mr_15'></span>Team</p>
+                            <h6 className='pt_5 pb_10 ml_15'>Personal deatils <img className='pl_5' src={Icon.Check}></img></h6>
+                            <p className='com_details'><span className='linetext mr_15'></span>Your  company’s information <img className='pl_5' src={Icon.Check}></img></p>
+                            <p className='com_details ml_15'>Team</p>
                         </div>
                     </div>
                 </MDBCol>
@@ -41,7 +41,7 @@ function SignUp() {
                         <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='e.g.  person@company.com' id='formControlLg' type='email' />
                         <MDBInput className='signupinput_field' wrapperClass='mb-4' placeholder='e.g.  person@company.com' id='formControlLg' type='email' />
 
-                        <div className="addmore_team_link d-flex justify-content-between align-items-center mb_30">
+                        <div className="addmore_team_link d-flex justify-content-between align-items-center mb_50">
                             <a href="!#">+ Add more team member</a>
                         </div>
 

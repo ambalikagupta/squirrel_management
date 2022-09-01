@@ -9,6 +9,25 @@
     url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display") format("svg"); 
 }
+
+@font-face {font-family: "SF Pro Display Light"; 
+    src: url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.eot"); 
+    src: url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/70c38766a71f8f7f0a477605da15fcd3.svg#SF Pro Display") format("svg"); 
+}
+
+@font-face {font-family: "SF Pro Display Thin"; 
+    src: url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.eot"); 
+    src: url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/2fed949d780f40eb2e2f4374e4de8df5.svg#SF Pro Display") format("svg"); 
+}
+
 @font-face {
     font-family: "SF Pro Display Semibold"; 
     src: url("//db.onlinewebfonts.com/t/179429c3795fb9aed42c526bd1133cc0.eot"); 
@@ -47,4 +66,54 @@
     url("//db.onlinewebfonts.com/t/9695ecad8bb007115bd8ae8c4c1aadec.woff") format("woff"), 
     url("//db.onlinewebfonts.com/t/9695ecad8bb007115bd8ae8c4c1aadec.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/9695ecad8bb007115bd8ae8c4c1aadec.svg#SF Pro Display") format("svg"); 
+}
+
+
+
+@font-face {
+    font-family: "Inter Black"; 
+    src: url("../fonts/Inter-Black.otf"); 
+}
+
+@font-face {
+    font-family: "Inter Bold"; 
+    src: url("../fonts/Inter-Bold.otf"); 
+}
+
+@font-face {
+    font-family: "Inter ExtraBold"; 
+    src: url("../fonts/Inter-ExtraBold.otf"); 
+}
+
+@font-face {
+    font-family: "Inter ExtraLight"; 
+    src: url("../fonts/Inter-ExtraLight.otf"); 
+}
+
+@font-face {
+    font-family: "Inter Light"; 
+    src: url("../fonts/Inter-Light.otf"); 
+}
+
+@font-face {
+    font-family: "Inter Medium"; 
+    src: url("../fonts/Inter-Medium.otf"); 
+}
+
+@font-face {
+    font-family: "Inter Regular"; 
+    src: url("../fonts/Inter-Regular.otf"); 
+}
+
+@font-face {
+    font-family: "Inter SemiBold"; 
+    src: url("../fonts/Inter-SemiBold.otf"); 
+}
+@font-face {
+    font-family: "Inter Thin"; 
+    src: url("../fonts/Inter-Thin.otf"); 
+}
+@font-face {
+    font-family: "Inter V"; 
+    src: url("../fonts/Inter-V.ttf"); 
 }

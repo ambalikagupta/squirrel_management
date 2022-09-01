@@ -13,9 +13,10 @@ import Header from "../Dashboard/Header";
 import Form from "react-bootstrap/Form";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import "../../assets/css/fonts.css"
 import { Icon } from "../../Utilities/Icon"
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -121,7 +122,7 @@ export default function Projectsetting() {
     return (
         <div className={classes.root}>
             <AppBar className={clsx(classes.appBar, open && classes.appBarShift)}>
-                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px", paddingLeft:"4px"}}>
                     <img
                         src={Icon.Closearrow}
                         alt=""

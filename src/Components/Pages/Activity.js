@@ -17,10 +17,11 @@ import Typography from '@mui/material/Typography';
 import Modal from "react-bootstrap/Modal";
 import TextEditor from "../RteEditor/TextEditor";
 import { Icon } from "../../Utilities/Icon"
+import "../../assets/css/fonts.css"
 
 
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const Accordion = ({ children }) => {
     let rfVal = useRef(null);
@@ -150,7 +151,7 @@ export default function Activity() {
             <AppBar
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
-                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px", paddingLeft:"4px"}}>
                     <img  src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden

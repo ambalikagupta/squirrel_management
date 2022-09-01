@@ -12,7 +12,7 @@ import Header from "./Header";
 import { Icon } from "../../Utilities/Icon"
 
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -120,7 +120,7 @@ export default function Dashboard() {
             <AppBar
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
-                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px", paddingLeft:"4px"}}>
                     <img src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden
@@ -147,10 +147,10 @@ export default function Dashboard() {
             </Drawer>
             <main className={classes.content} style={{position:"relative"}}>
                 <div className={classes.appBarSpacer} />
-                <div className="col-md-4 madhouse_music mt_20 mb_20 mr_20 ml_20">
+                <div className="madhouse_music mb_20 ml_20">
                     <div className="madhouse_top_first ml_10 mr_10">
                         <div><span className="letter_circle1">N</span></div>
-                        <div className="pl_20">
+                        <div className="pl_15">
                             <h6>Madhouse Music App</h6>
                             <p className="mb_35">Music mobile app to stream mixes, which has admin syste, vendor panel, user mobile app.</p>
                         </div>
@@ -159,15 +159,15 @@ export default function Dashboard() {
                     <div className="d-flex justify-content-between">
                         <div className="madhouse_top_sec ml_10 mr_10">
                             <div><img src={require("../../assets/image/png/uyi.png").default} alt="" /></div>
-                            <div className="pl_20"><h5>Uyi Omokaro</h5>
+                            <div className="pl_15"><h5>Uyi Omokaro</h5>
                                 <small>Client from Lagos, Nigeria</small></div>
                         </div>
                         <div><img className="mr_10" src={require("../../assets/image/png/arrowright.png").default} alt="" /></div>
                     </div>
 
-                    <hr />
+                    <hr className="ml_10 mt_20 mb_20" />
 
-                    <div className="addicon_button ml_10 mr_10 mb_10">
+                    <div className="addicon_button ml_10 mb_10">
                         <button className="button1">Invoice <svg className="ml_60" xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
                             <line x1="5.5" y1="0.5" x2="5.5" y2="11.5" stroke="black" />
                             <line x1="11" y1="6" y2="6" stroke="black" />
@@ -181,7 +181,7 @@ export default function Dashboard() {
                             <line x1="11" y1="6" y2="6" stroke="black" />
                         </svg></button>
                     </div>
-                    <hr />
+                    <hr className="ml_10 mt_20 mb_20" />
 
                     <div className="madhouse_bootom_section">
                         <p>Members and cost</p>
@@ -190,22 +190,22 @@ export default function Dashboard() {
                             <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rushabpatel_two.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rushabh Patel</span></div>
                                 <div><span className="designation pl_5 pr_5">74hr . 30min</span><span className="designation pl_5 pr_5">$760</span></div></div>
                         </div>
-                        <hr />
+                        <hr style={{marginTop:"12px",marginBottom:"12px"}} />
                         <div className="edit_box_header">
                             <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/varunda.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Vrunda</span></div>
                             <div><span className="designation pl_5 pr_5">14hr . 11min</span><span className="designation pl_5 pr_5">$160</span></div></div>
                         </div>
-                        <hr />
+                        <hr  style={{marginTop:"12px",marginBottom:"12px"}}/>
                         <div className="edit_box_header">
                             <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/jaypatel.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Jay Patel</span></div>
                             <div><span className="designation pl_5 pr_5">41hr . 00min</span><span className="designation pl_5 pr_5">$560</span></div></div>
                         </div>
-                        <hr />
+                        <hr  style={{marginTop:"12px",marginBottom:"12px"}}/>
                         <div className="edit_box_header">
                             <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/abhik.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Abhik</span></div>
                             <div><span className="designation pl_5 pr_5">54hr . 15min</span><span className="designation pl_5 pr_5">$110</span></div></div>
                         </div>
-                        <hr />
+                        <hr  style={{marginTop:"12px",marginBottom:"12px"}}/>
                         <div className="edit_box_header">
                             <div className="edit_report_header"><div><span className="pl_5 pr_5"><img src={require("../../assets/image/png/rutvik.png").default} alt="" /></span><span className="profilename pl_5 pr_5">Rutvik</span></div>
                             <div><span className="designation pl_5 pr_5">63hr . 35min</span><span className="designation pl_5 pr_5">$150</span></div></div>

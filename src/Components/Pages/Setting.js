@@ -10,6 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { mainListItems, secondaryListItems } from "../Dashboard/SideNav";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import "../../assets/css/fonts.css"
 import { Icon } from "../../Utilities/Icon"
 
 

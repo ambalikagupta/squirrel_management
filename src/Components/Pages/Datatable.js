@@ -11,8 +11,9 @@ import { mainListItems, secondaryListItems } from "../Dashboard/SideNav";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 import { Icon } from "../../Utilities/Icon"
+import "../../assets/css/fonts.css"
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -108,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Datatable() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -119,7 +120,7 @@ export default function Datatable() {
   return (
     <div className={classes.root}>
       <AppBar className={clsx(classes.appBar, open && classes.appBarShift)} >
-        <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
+        <Toolbar className={classes.toolbar} style={{minHeight:"45px", paddingLeft:"4px"}}>
           <img
             src={Icon.Closearrow}
             alt=""
@@ -439,7 +440,7 @@ export default function Datatable() {
               <p style={{ color: "#737376" }}>₹ 1950</p>
             </div>
 
-            <hr />
+            <hr className="mt_15 mb_30" />
 
 
             <div className="deparment_wise d-flex justify-content-between mb_5">

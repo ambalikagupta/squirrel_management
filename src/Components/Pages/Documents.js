@@ -12,9 +12,10 @@ import Header from "../Dashboard/Header";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
 import { Icon } from "../../Utilities/Icon"
+import "../../assets/css/fonts.css"
 
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -119,7 +120,7 @@ export default function Documents() {
             <AppBar
                 className={clsx(classes.appBar, open && classes.appBarShift)}
             >
-                <Toolbar className={classes.toolbar} style={{minHeight:"45px"}}>
+                <Toolbar className={classes.toolbar} style={{minHeight:"45px", paddingLeft:"4px"}}>
                     <img src={Icon.Closearrow} alt="" className={clsx(
                         classes.menuButton,
                         open && classes.menuButtonHidden

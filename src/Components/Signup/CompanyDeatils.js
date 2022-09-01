@@ -22,12 +22,12 @@ function CompanyDeatils() {
                 <MDBCol col='10' md='3' style={{ background: "#3653F6" }}>
                     <h2 className='signup_header_logo'>Squirrell</h2>
                     <div className='signup_sidenav'>
-                        <p className='new_account'>Creating new Account</p>
-                        <hr className='mt_20 mb_20'style={{border: "1px solid rgba(255, 255, 255, 0.2)"}}  />
+                        <p className='new_account ml_15'>Creating New Account</p>
+                        <hr style={{ borderTop: "1px solid rgba(255, 255, 255, 0.2)", width:"90%" }} className='mt_25 mb_25' />
                         <div className='signup_details'>
-                            <h6 className='pt_5 pb_5 ml_15'>Personal Deatils <img className='pl_5' src={Icon.Check}></img></h6>
+                            <h6 className='pt_5 pb_10 ml_15'>Personal deatils <img className='pl_5' src={Icon.Check}></img></h6>
                             <p className='com_details'><span className='linetext mr_15'></span>Your  company’s information</p>
-                            <p className='invite_teams ml_15'>Team</p>
+                            <p className='sign_up ml_15'>Team</p>
                         </div>
                     </div>
                 </MDBCol>
@@ -48,22 +48,22 @@ function CompanyDeatils() {
                             defaultValue={selectedOption}
                             onChange={setSelectedOption}
                             options={document}
-                            placeholder="Company Location"
                         />
                         <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Describe your company in 20 words.' id='formControlLg' type='text'  />
                         <MDBTextArea className='textarea_inputfield' contrast id='textAreaExample' placeholder='Long description about your company' rows={4}></MDBTextArea>
 
                         <div className="signup_divider mt_35" style={{fontSize:"16px"}}>
-                            <p className="font-weight-bold text-dark">Markets</p>
+                            <p className='text-dark' style={{fontWeight:"600", fontSize:"16px"}}>Markets</p>
                         </div>
 
-                        <MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Mobile, Blockchain, SAAS' id='formControlLg' type='text'  />
+                        <div className='company_details_search'> <img className="searchicon" src={require("../../assets/image/png/search.png").default} pl_5 /><MDBInput className='signupinput_field' wrapperClass='mb-2' placeholder='Mobile, Blockchain, SAAS' id='formControlLg' type='text'  /></div>
+
+                       
                         <Select
                             className='signupinput_field mb-2 form-outline'
                             defaultValue={selectedOption1}
                             onChange={setSelectedOption1}
                             options={document1}
-                            placeholder="No. of employees?"
                         />
 
                         <div className="signup_button d-flex justify-content-end mb-4">

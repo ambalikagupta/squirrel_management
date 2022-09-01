@@ -27,7 +27,7 @@ export const secondaryListItems = (
     <div className="sidenav">
         <div className="create_project  pb_10 pl_15 pr_10">
             <p>Projects</p>
-            <a href="#">Create new Project +</a>
+            <a href="#">Create New Project +</a>
         </div>
 
         <div className="sidenav_bottom_div">
@@ -39,8 +39,8 @@ export const secondaryListItems = (
             <a href="#"><span className="letter_circle5">L</span><span className="pl_15">LIC App</span></a>
         </div>
 
-        <div className="sidenav_profile sidenav_profile mt_20 pt_10">
-            <a href="#"><img className="" src={require("../../assets/image/png/profile.png").default} alt="" /><span className="pl_20">WOLFSOFT</span></a><span >&#10247;</span>
+        <div className="sidenav_profile pt_5 mb_5">
+            <a href="#"><img className="" src={require("../../assets/image/png/profile.png").default} alt="" /><span className="pl_20">WOLFSOFT</span></a><span  className="pr_10">&#10247;</span>
         </div>
     </div>
 );

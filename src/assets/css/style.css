@@ -725,9 +725,11 @@
   line-height: 29px;
   letter-spacing: 0.02em;
   color: #000000;
-} 
+}
+
 .divider span {
-  font-family:"SF Pro Display Bold"; ;
+  font-family: "SF Pro Display Bold";
+  ;
 }
 
 .divider p {
@@ -740,7 +742,7 @@
 }
 
 .loginpage_field {
-  max-width: 360px;
+  max-width: 365px;
   margin: 115px auto;
   width: 100%;
   padding: 5px 10px;
@@ -749,6 +751,7 @@
 .logininput_field {
   background: none !important;
   height: 50px !important;
+  padding: 5px 10px !important;
 }
 
 .logininput_field::placeholder {
@@ -773,8 +776,8 @@
 .forgot_password_link button {
   background: #3653f6;
   border-radius: 3px;
-  padding: 12px 40px;
-  font-family: "SF Pro Display Regular";
+  padding: 12px 45px;
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -782,6 +785,7 @@
   border: none;
   text-transform: uppercase;
   color: #ffffff;
+  letter-spacing: 0.4px;
 }
 
 .socialmedia_div .lead {
@@ -796,11 +800,11 @@
 }
 
 .socialmedia_button {
-  gap: 15px;
+  gap: 8px;
 }
 
 .socialmedia_button button {
-  border: 1px solid #d6d6d654;
+  border: 2px solid #d6d6d654;
   border-radius: 3px;
   background: none !important;
   font-family: "SF Pro Display Regular";
@@ -809,6 +813,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #242529;
+  letter-spacing: 0.4px;
 }
 
 .project_expenses {
@@ -828,9 +833,12 @@
 .row.signuppage {
   height: 100vh;
 }
+.signuppage .col-md-3 {
+  max-width: 22% !important;
+}
 
 .signup_header_logo {
-  font-family: "SF Pro Display Heavy";
+  font-family: "SF Pro Display Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -838,15 +846,15 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 35px 20px;
+  padding: 40px 30px;
 }
 
 .signup_sidenav {
-  margin: 142px 20px;
+  margin: 135px 20px;
 }
 
 .signup_sidenav .new_account {
-  font-family: "SF Pro Display Medium";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -855,53 +863,35 @@
   color: #ffffff;
 }
 
+
+.signup_details .sign_up {
+  font-family: "SF Pro Display Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .signup_details h6 {
   font-family: "SF Pro Display Regular";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 0.06em;
+  letter-spacing: 1.4px;
   color: #ffffff;
-  /* border-left: 1px solid #FFFFFF ; */
 }
 
-.signup_details .sign_up {
-  font-family: "SF Pro Display Regular";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-color: rgba(255, 255, 255, 0.7);
-}
-
-.signup_details .invite_teams {
-  font-family: "SF Pro Display Regular";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.06em;
-color: rgba(255, 255, 255, 0.7);
-}
-.signup_details .inv_team{
-  font-family: 'SF Pro Display Regular ';
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 17px;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-}
 
 .signup_details .com_details {
   font-family: "SF Pro Display Regular";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 0.06em;
+  letter-spacing: 1.4px;
   color: #ffffff;
 }
 
@@ -924,7 +914,7 @@ color: #FFFFFF;
 
 .signuppage_field {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 80px auto;
   width: 100%;
   padding: 5px 10px;
   display: block;
@@ -939,8 +929,9 @@ color: #FFFFFF;
   line-height: 32px;
   letter-spacing: 0.02em;
   color: #151417;
-  margin-top: 60px;
+  margin-top: 50px;
 }
+
 .linetext {
   border-left: 1px solid #ffffff;
 }
@@ -952,6 +943,7 @@ color: #FFFFFF;
   font-size: 14px;
   line-height: 17px;
   color: #7f8197;
+  letter-spacing: 0.2px;
 }
 
 .signupinput_field {
@@ -985,19 +977,21 @@ color: #FFFFFF;
 }
 
 .signupinput_field .css-1s2u09g-control {
-  min-height: 50px !important;
   background: none !important;
   border: 1px solid #ced4da !important;
 }
 
-.signupinput_field .css-1s2u09g-control::placeholder {
+.signupinput_field .css-319lph-ValueContainer {
+ min-height: 48px !important;
+}
+
+.signupinput_field .css-qc6sy-singleValue {
   font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #7f8197;
-  transform: translate3d(0, 5px, 0);
 }
 
 .signup_button button {
@@ -1012,17 +1006,9 @@ color: #FFFFFF;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
+  letter-spacing: 0.4px;
 }
 
-.signup_details .company_information {
-  font-family: "SF Pro Display Regular";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
 
 .signupinput_field option {
   font-family: "SF Pro Display Regular";
@@ -1044,13 +1030,29 @@ color: #FFFFFF;
 }
 
 .addmore_team_link a {
-  font-family: "SF Pro Display Regular";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #0c1ebe;
 }
+.company_details_search{
+  position: relative;
+}
+
+.company_details_search .searchicon {
+  width: 18px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.company_details_search input {
+  padding-left: 40px;
+}
+
+
 
 /* -------------------------------------------------------/* sign up css end *------------------------------------- */
 
@@ -1091,12 +1093,13 @@ color: #FFFFFF;
 }
 
 .sidenav {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sidenav a {
   padding: 5px 8px 8px 15px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1112,7 +1115,7 @@ color: #FFFFFF;
 }
 
 .create_project p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -1122,7 +1125,7 @@ color: #FFFFFF;
 }
 
 .create_project a {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -1134,41 +1137,51 @@ color: #FFFFFF;
 .sidenav_bottom_div a {
   display: flex;
   align-items: center;
-  padding: 5px 8px 8px px;
+  padding: 5px 8px 8px 14px;
 }
 
 .sidenav_bottom_div .letter_circle1 {
   background: #e3afff;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 4px 7px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .sidenav_bottom_div .letter_circle2 {
   background: #fff1a6;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .sidenav_bottom_div .letter_circle3 {
   background: #ffa8d0;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .sidenav_bottom_div .letter_circle4 {
   background: #95b7e7;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 4px 7px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .sidenav_bottom_div .letter_circle5 {
   background: #ff8584;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .sidenav_bottom_div span {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1181,22 +1194,38 @@ color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "SF Pro Display";
+  border-top: 1px solid #e1e3e9;
+  border-right: 1px solid #e1e3e9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  letter-spacing: 0.03em;
+  width: 240px;
+  background: #FFFF;
+  z-index: 99;
+}
+
+.sidenav_profile  a {
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 16 px;
+  font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: #242529;
-  border-top: 1px solid #e1e3e9;
-  position: absolute;
-  left: 0;
-  right: 10px;
 }
 
 .sidenav a:hover {
   color: unset;
   text-decoration: unset;
+}
+
+.makeStyles-drawerPaperClose-10 {
+  width: 53px !important;
+}
+
+.makeStyles-menuButton-6 {
+  margin-left: 15px;
 }
 
 /* header css  */
@@ -1207,18 +1236,24 @@ color: #FFFFFF;
   padding: 0 !important;
 }
 
+.navbar_navigation .custom-select-activity-nav select {
+  border: none;
+  background: #F6F6F6;
+}
+
 .main-header .button1 {
   background: #000000;
   border: 1px solid #242529;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #f6f6f6;
-  padding: 8px 20px;
+  padding: 8px 25px;
   border: none;
+  margin-right: 5px;
 }
 
 .mob-button {
@@ -1231,35 +1266,25 @@ color: #FFFFFF;
   top: 15px;
 }
 
-@media (max-width: 991px) {
-  .navbar {
-    padding: 20px 0px !important;
-  }
-
-  .navbar_navigation {
-    width: 100%;
-    margin-top: 40px;
-  }
-}
-
 .navbar_navigation a {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
   color: #242529 !important;
 }
 
 .navbar_navigation a:nth-child(1) {
   font-weight: 700;
   color: #242529 !important;
+  font-family: "Inter Bold";
 }
 
 .navbar_navigation a:nth-child(2) {
-  font-weight: 600;
+  font-weight: 500;
   color: #3653f6 !important;
 }
 
@@ -1269,7 +1294,7 @@ color: #FFFFFF;
   position: absolute !important;
   right: 0;
   top: 60px;
-  max-width: 400px !important;
+  max-width: 340px !important;
 }
 
 .madhouse_top_first,
@@ -1281,8 +1306,8 @@ color: #FFFFFF;
 .madhouse_top_first .letter_circle1 {
   background: #fff1a6;
   border-radius: 50%;
-  padding: 6px 8px;
-  font-family: "Inter", sans-serif;
+  padding: 6px 11px;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1294,7 +1319,7 @@ color: #FFFFFF;
 }
 
 .madhouse_top_first h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1303,7 +1328,7 @@ color: #FFFFFF;
 }
 
 .madhouse_top_first p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1312,7 +1337,7 @@ color: #FFFFFF;
 }
 
 .madhouse_top_sec h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1322,7 +1347,7 @@ color: #FFFFFF;
 }
 
 .madhouse_top_sec small {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1332,7 +1357,7 @@ color: #FFFFFF;
 
 .addicon_button {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -1343,13 +1368,13 @@ color: #FFFFFF;
   padding: 14px 0px;
   text-transform: capitalize;
   color: #151417;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   border: none;
-  max-width: 160px;
+  max-width: 158px;
   width: 100%;
 }
 
@@ -1372,13 +1397,14 @@ color: #FFFFFF;
 }
 
 .madhouse_bootom_section p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #242529;
+  margin-bottom: 22px;
 }
 
 /* -------------------------------------------------------/* Dashboard css end *------------------------------------- */
@@ -1390,7 +1416,6 @@ color: #FFFFFF;
 .cards_documents {
   display: flex;
   gap: 10px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -1413,7 +1438,7 @@ color: #FFFFFF;
 }
 
 .documents_text .scope_work {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1422,7 +1447,7 @@ color: #FFFFFF;
 }
 
 .documents_text .pt_5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1436,12 +1461,14 @@ color: #FFFFFF;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e1e3e9;
+  padding-bottom: 15px;
 }
 
 .documents_header h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1450,7 +1477,6 @@ color: #FFFFFF;
   align-items: center;
   letter-spacing: -0.03em;
   color: #151417;
-  padding-bottom: 10px;
 }
 
 /* Style the search box inside the navigation bar */
@@ -1465,11 +1491,11 @@ color: #FFFFFF;
 .document_search img {
   position: absolute;
   top: 16px;
-  right: 30px;
+  right: 16px;
 }
 
 .search_document input::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1480,7 +1506,7 @@ color: #FFFFFF;
 }
 
 .custom-select-documents select {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1503,10 +1529,11 @@ color: #FFFFFF;
   margin-bottom: 10px;
   margin-top: 10px;
   border-bottom: 1px solid #e1e3e9;
+  padding-bottom: 15px;
 }
 
 .activity_header h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1515,7 +1542,6 @@ color: #FFFFFF;
   align-items: center;
   letter-spacing: -0.03em;
   color: #151417;
-  padding-bottom: 10px;
 }
 
 .activity_header_select {
@@ -1530,7 +1556,7 @@ color: #FFFFFF;
 }
 
 .search_document input::placeholder {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1541,7 +1567,7 @@ color: #FFFFFF;
 }
 
 .custom-select-activity select {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1563,7 +1589,7 @@ color: #FFFFFF;
 .activity_button .button1 {
   background: #3653f6;
   border-radius: 100px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter ExtraLight";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1577,7 +1603,7 @@ color: #FFFFFF;
   background: #f1f1f1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1602,7 +1628,7 @@ color: #FFFFFF;
 
 .accor .time,
 .edit_box_header .time {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1612,7 +1638,7 @@ color: #FFFFFF;
 
 .accor .profilename,
 .edit_box_header .profilename {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1622,7 +1648,7 @@ color: #FFFFFF;
 
 .accor .designation,
 .edit_box_header .designation {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1636,7 +1662,7 @@ color: #FFFFFF;
   padding: 6px 15px;
   text-transform: capitalize;
   color: #151417;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1657,7 +1683,7 @@ color: #FFFFFF;
   padding: 0px 90px;
 }
 
-.accor.active > .body {
+.accor.active>.body {
   max-height: 600px;
   padding-bottom: 15px;
 }
@@ -1670,10 +1696,15 @@ color: #FFFFFF;
   align-items: center;
 }
 
+.share_modal .modal-dialog {
+  max-width: 100%;
+  width: 438px;
+}
+
 .modal_title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 19px;
   color: #000000;
@@ -1686,7 +1717,7 @@ color: #FFFFFF;
 }
 
 .modal_footer .hours_worked {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1700,7 +1731,7 @@ color: #FFFFFF;
   background: #f6f6f6;
   border: 1px solid #e2e2e2;
   border-radius: 6px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1713,7 +1744,7 @@ color: #FFFFFF;
   background: #3653f6;
   border-radius: 2px;
   padding: 8px 50px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1726,28 +1757,29 @@ color: #FFFFFF;
 
 /* -------------------------------------------------------/* Edit Document css Start *------------------------------------- */
 
-.document_header img {
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 20px;
+.document_header .arrowimg {
+  margin-top: -30px;
+  margin-left: 10px;
+  margin-right: 30px;
 }
 
 .text-muted2 {
   color: #151417;
   font-weight: 500;
   font-size: 12px;
+  font-family: "Inter Medium";
 }
 
 .document_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
   flex-wrap: wrap;
 }
 
 .document_header h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -1756,12 +1788,12 @@ color: #FFFFFF;
 }
 
 .document_header .text-muted {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 15px;
-  color: #7f8197;
+  color: #7f8197 !important;
 }
 
 .document_button {
@@ -1774,13 +1806,14 @@ color: #FFFFFF;
 .document_button .button2 {
   background: #3653f6;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   color: #ffffff;
   padding: 10px 35px;
+  letter-spacing: 0.03em;
   border: none;
 }
 
@@ -1788,13 +1821,27 @@ color: #FFFFFF;
   background: #ffffff;
   border: 1px solid #242529;
   border-radius: 100px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   color: #242529;
+  letter-spacing: 0.03em;
   padding: 8px 20px;
+}
+
+.editdocuments .ql-container.ql-snow {
+  border: none;
+}
+.editdocuments .ql-toolbar.ql-snow {
+  padding: 18px 15px 18px 53px;
+  border: none;
+  border-top: 1px solid #E8ECF4;
+  border-bottom: 1px solid #E8ECF4;
+}
+.editdocuments .ql-editor {
+  padding: 35px 15px 15px 56px;
 }
 
 .modal_body_toggle,
@@ -1805,7 +1852,7 @@ color: #FFFFFF;
 }
 
 .modal_body_toggle .link_text {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -1851,15 +1898,15 @@ color: #FFFFFF;
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #08bd7c;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #08bd7c;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -1875,7 +1922,7 @@ input:checked + .slider:before {
 }
 
 .modal_body_toggle .download_pdf {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1883,11 +1930,12 @@ input:checked + .slider:before {
   text-align: right;
   color: #3653f6;
   text-decoration: none;
+  letter-spacing: 0.8px;
 }
 
 .modal_body_toggle .text-muted,
 .modal_body_bottom_toggle .text-muted {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1900,9 +1948,9 @@ input:checked + .slider:before {
   background: #19b858;
   border-radius: 6px;
   width: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Light";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
@@ -1910,12 +1958,19 @@ input:checked + .slider:before {
 }
 
 .profilename_client {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   color: #3653f6;
+}
+.modal.show  {
+  display:flex!important;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  align-items: flex-start;
 }
 
 /* -------------------------------------------------------/* Edit Document css end *------------------------------------- */
@@ -1923,17 +1978,18 @@ input:checked + .slider:before {
 /* -------------------------------------------------------/* Project Settings css Start *------------------------------------- */
 .projectsetting_header {
   border-bottom: 1px solid #e1e3e9;
+  padding-bottom: 15px;
+  margin-top: 10px;
 }
 
 .projectsetting_header h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #151417;
   letter-spacing: -0.03em;
-  padding-bottom: 10px;
 }
 
 .form_group {
@@ -1944,7 +2000,7 @@ input:checked + .slider:before {
   border: 1px solid #d6d6d6;
   border-radius: 3px;
   padding: 10px;
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1953,6 +2009,7 @@ input:checked + .slider:before {
 }
 
 .form_group label {
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1995,7 +2052,7 @@ input:checked + .slider:before {
   background: #f6f6f6;
   border-radius: 4px;
   padding: 12px 70px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2005,7 +2062,7 @@ input:checked + .slider:before {
 }
 
 .form_group input::placeholder {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2033,13 +2090,14 @@ input:checked + .slider:before {
 }
 
 .members_header h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 21px;
   color: #242529;
   margin-bottom: 0;
+  padding-left: 15px;
 }
 
 .header_select_selection {
@@ -2061,7 +2119,7 @@ input:checked + .slider:before {
 }
 
 .member_search {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e2e2e2;
@@ -2084,7 +2142,7 @@ input:checked + .slider:before {
 }
 
 .form-inline input::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2097,7 +2155,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .invite_member {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   width: 225px;
   font-size: 13px;
   line-height: 16px;
@@ -2115,7 +2173,7 @@ input:checked + .slider:before {
 }
 
 .rightside_div .select_member {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   width: 101px;
   font-weight: 600;
   font-size: 13px;
@@ -2146,7 +2204,7 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:first-child {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -2155,7 +2213,7 @@ input:checked + .slider:before {
 }
 
 .full_member_div p:last-child {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular";
   color: #8b8b8b;
   font-weight: 500;
   font-size: 16px;
@@ -2170,7 +2228,7 @@ input:checked + .slider:before {
 }
 
 .member_table_head {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -2185,7 +2243,7 @@ input:checked + .slider:before {
 }
 
 .member_table_body_row {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -2206,7 +2264,7 @@ input:checked + .slider:before {
 }
 
 .members_salary_incentive h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -2223,9 +2281,9 @@ input:checked + .slider:before {
 }
 
 .salary-description p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Medium";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 15px;
 }
@@ -2433,6 +2491,7 @@ input:checked + .slider:before {
   display: flex;
   min-height: 45px;
 }
+
 .block-tabs-candidates-mob {
   display: none;
 }

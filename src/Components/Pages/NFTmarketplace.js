@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import KeyboardArrowDownRoundedIcon from "@material-ui/icons/KeyboardArrowDownRounded";
 import clsx from "clsx";
 import { Icon } from "../../Utilities/Icon"
+import "../../assets/css/fonts.css"
 
 
 export default function NFTmarketplace() {
@@ -45,9 +46,9 @@ export default function NFTmarketplace() {
         <div className="edit_document_main">
             <main>
                 <div className="document_header">
-                    <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt="" />
+                    <div className="d-flex justify-content-center align-items-center"><img className="arrowimg" src={Icon.Backarrow} alt="" />
                         <h2>NFT Marketplace Proposal <img className="pl_5" src={require("../../assets/image/png/nfteditpic.png").default} alt="" /><br /> <span className="text-muted">Last Updated <span className="text-muted2">15 June 2022 </span> by <span className="text-muted2">Rushabh patel</span> </span></h2></div>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="d-flex justify-content-center">
                         <div className="document_button mt_10 mb_10">
                             <div>
                                 <button onClick={handleShow} className="button1"><svg className="mr_10" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
@@ -61,11 +62,11 @@ export default function NFTmarketplace() {
                     </div>
                 </div>
                 <Container fluid>
-                    <ReactQuill className="shadow-sm"
+                    <ReactQuill className="editdocuments"
                         theme="snow"
                         style={{
                             height: "85vh",
-                            marginTop: '1rem',
+                            marginTop: '5px',
                             display: 'flex',
                             flexDirection: 'column'
                         }}
@@ -97,12 +98,12 @@ export default function NFTmarketplace() {
 
             </main>
 
-            <Modal show={showModal} onHide={handleClose} size="md">
+            <Modal className="share_modal" show={showModal} onHide={handleClose} size="md">
                 <Modal.Header closeButton>
                     <Modal.Title className="modal_title">Share this document</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="modal_body_toggle mt_10 mb_10">
+                    <div className="modal_body_toggle mt_5 mb_10">
                         <div>
                             <h6 className="link_text"><img className="pl_5 pr_5" src={require("../../assets/image/png/frame.png").default} alt="" /> Public Link</h6>
                         </div>
@@ -124,7 +125,7 @@ export default function NFTmarketplace() {
                         /></div> : null
                     }
 
-                    <div className="modal_body_toggle mt_20 mb_10">
+                    <div className="modal_body_toggle mt_5 mb_10">
                         <div>
                             <h6 className="link_text"><img className="pl_5 pr_5" src={require("../../assets/image/png/frame.png").default} alt="" /> Private link</h6>
                         </div>
@@ -147,7 +148,7 @@ export default function NFTmarketplace() {
                     }
 
 
-                    <div className="modal_body_toggle mt_20 mb_10">
+                    <div className="modal_body_toggle mt_5 mb_10">
                         <div>
                             <h6 className="link_text"><img className="pl_5 pr_5" src={require("../../assets/image/png/frame.png").default} alt="" /> Download Document</h6>
                         </div>
@@ -158,7 +159,7 @@ export default function NFTmarketplace() {
                     </div>
 
                     <div className="modal_body_toggle">
-                        <p className="text-muted mt_10 ml_15">SHARE WITH</p>
+                        <p className="text-muted mt_20 ml_15">SHARE WITH</p>
                     </div>
 
                     <div className="modal_body_toggle mb_10">
@@ -168,9 +169,9 @@ export default function NFTmarketplace() {
         /></h6>
                         </div>
 
-                        <div className="profile_pic">
+                        {/* <div className="profile_pic">
                             <a href="#"><img className="" src={require("../../assets/image/png/profile.png").default} alt="" /><img className="" src={require("../../assets/image/png/profile2.png").default} alt="" /><img className="" src={require("../../assets/image/png/profilepic.png").default} alt="" /></a>
-                        </div>
+                        </div> */}
                     </div>
                 </Modal.Body>
                 {

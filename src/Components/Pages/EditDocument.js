@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import "../../assets/css/fonts.css"
 import {Container} from "react-bootstrap";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
@@ -15,9 +16,9 @@ export default function EditDocument() {
         <div className="edit_document_main">
             <main>
             <div className="document_header">
-                <div className="d-flex justify-content-center align-items-center"><img src={Icon.Backarrow} alt=""/>
-                    <h2>Enter document title here <br /> <span className="text-muted">Creating new document</span></h2></div>
-                    <div className="d-flex flex-wrap justify-content-center align-items-center">
+                <div className="d-flex justify-content-center align-items-center"><img className="arrowimg" src={Icon.Backarrow} alt=""/>
+                    <h2>Enter document title here <img className="pl_5" src={require("../../assets/image/png/nfteditpic.png").default} alt="" /> <br /> <span className="text-muted">Creating new document</span></h2></div>
+                    <div className="d-flex flex-wrap justify-content-center">
                         <div className="document_button mt_10 mb_10">
                             <div>
                                 <button className="button1"><svg className="mr_10" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
@@ -31,11 +32,11 @@ export default function EditDocument() {
                     </div>
             </div>
             <Container fluid>
-                <ReactQuill className="shadow-sm"
+                <ReactQuill className="editdocuments"
                             theme="snow"
                             style={{
                                 height: "85vh",
-                                marginTop: '1rem',
+                                marginTop: '5px',
                                 display: 'flex',
                                 flexDirection: 'column'
                             }}

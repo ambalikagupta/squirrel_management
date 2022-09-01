@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../assets/css/style.css";
 import "../../assets/css/responsive.css";
+import "../../assets/css/fonts.css"
 
 export default function Candidate() {
   const [toggleState, setToggleState] = useState(1);
